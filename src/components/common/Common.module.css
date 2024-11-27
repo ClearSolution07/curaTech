@@ -1,0 +1,40 @@
+.Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: #f8f9fa;
+    height: 400px;
+}
+
+.leftContainer {
+    width: 36%;
+    padding: 36px;
+}
+.rightContainer {
+    width: 48%;
+    padding: 36px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.heading {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.subheading {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #666;
+}
+
+.description {
+    font-size: 12px;
+    color: #777;
+}
