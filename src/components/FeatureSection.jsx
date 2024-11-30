@@ -1,29 +1,45 @@
 import React from "react";
-import { Row, Col, Typography } from "antd";
-import {
-  ToolOutlined,
-  ProjectOutlined,
-  BuildOutlined,
-} from "@ant-design/icons";
+import { Col, Typography } from "antd";
+import ruler from "../assets/ruler.png";
+import measuringTool from "../assets/measuring-tool.png";
+import engineer from "../assets/engineer.png";
 
 const { Title, Text } = Typography;
 
 const FeatureSection = () => {
   const features = [
     {
-      icon: <ToolOutlined style={{ fontSize: "50px", color: "#c13c3c" }} />,
+      icon: (
+        <img
+          src={engineer}
+          alt="Engineer Logo"
+          style={{ width: "40px", height: "40px" }}
+        />
+      ),
       title: "General Contract",
       description:
         "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
     },
     {
-      icon: <ProjectOutlined style={{ fontSize: "50px", color: "#c13c3c" }} />,
+      icon: (
+        <img
+          src={ruler}
+          alt="ruler Logo"
+          style={{ width: "40px", height: "40px" }}
+        />
+      ),
       title: "Project Planning",
       description:
         "Nullam commodo tincidunt nisl, nec vehicula dui interdum nec",
     },
     {
-      icon: <BuildOutlined style={{ fontSize: "50px", color: "#c13c3c" }} />,
+      icon: (
+        <img
+          src={measuringTool}
+          alt="measuringTool Logo"
+          style={{ width: "40px", height: "40px" }}
+        />
+      ),
       title: "Refurbishment",
       description:
         "Sed vitae aliquet ipsum, ut ornare lectus. Proin sed sem risus. Sed nunc",
@@ -32,32 +48,42 @@ const FeatureSection = () => {
 
   return (
     <Col
-      style={{ padding: "40px 40px", backgroundColor: "white", width: "450px" }}
+      style={{
+        padding: "32px 48px",
+        backgroundColor: "white",
+        width: "400px",
+        borderTop: "5px solid #001ED3",
+      }}
     >
-      <Row level={2} style={{ color: "#00215b", textAlign: "left" }}>
+      <Title level={3} style={{ color: "#00215b", textAlign: "left" }}>
         We Construct and Manage Places and Infrastructures
-      </Row>
-      <Col
-        gutter={[16, 24]}
-        style={{
-          marginTop: "20px",
-        }}
-      >
+      </Title>
+      <Col gutter={[16, 24]} style={{ marginTop: "24px" }}>
         {features.map((feature, index) => (
-          <Row
+          <div
             key={index}
-            xs={24}
-            md={8}
-            style={{ display: "flex", flexDirection: "row" }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px",
+              marginTop: "16px",
+            }}
           >
-            <div>{feature.icon}</div>
-            <div>
-              <div style={{ color: "#00215b", marginTop: "15px" }}>
+            <div style={{ marginTop: "8px" }}>{feature.icon}</div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                textAlign: "left",
+              }}
+            >
+              <div style={{ color: "#00215b", fontSize: "16px" }}>
                 {feature.title}
               </div>
               <div style={{ color: "#555" }}>{feature.description}</div>
             </div>
-          </Row>
+          </div>
         ))}
       </Col>
     </Col>

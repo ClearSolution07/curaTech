@@ -13,7 +13,6 @@ const Slider = () => (
           <div className={styles.buttonContainer}>
             <button className={styles.slideButton}>{slide.buttonText}</button>
           </div>
-          <FeatureSection />
         </div>
       ))}
     </Carousel>
