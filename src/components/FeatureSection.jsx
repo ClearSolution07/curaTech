@@ -4,7 +4,6 @@ import ruler from "../assets/ruler.png";
 import measuringTool from "../assets/measuring-tool.png";
 import engineer from "../assets/engineer.png";
 
-const { Title, Text } = Typography;
 
 const FeatureSection = () => {
   const features = [
