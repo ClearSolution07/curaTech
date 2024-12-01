@@ -1,78 +1,81 @@
-.container {
-    display: flex;
-    /* justify-content: space-between; */
-    /* margin: 10% 0 10% 0; */
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-    height: 100vh;
+.section_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  height: 400px;
+  padding-bottom: 2rem;
 }
 
-.leftContainer {
-    width: 40%;
-}
-.rightContainer {
-    display: flex;
-    width: 60%;
-}
-
-.step {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    color: white;
-}
-
-.background {
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+.section {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+  transition: flex 0.3s ease-in-out, transform 0.3s ease-in-out;
+  overflow: visible;
+  z-index: 1;
 }
 
-.bgImage1 {
-    background-image: url("../../assets/Service1.png");
+.section:hover {
+  z-index: 2;
 }
 
-.bgImage2 {
-    background-image: url("../../assets/Service2.png");
+.section:first-child {
+  flex: 3;
 }
 
-.bgImage3 {
-    background-image: url("../../assets/Service1.png");
+.section:not(:first-child) {
+  flex: 1;
+}
+
+.section:not(:first-child):hover {
+  flex: 1.5;
+  transform: scale(1.05);
 }
 
 .content {
-    position: relative;
-    z-index: 2;
-    /* padding: 20px; */
+  z-index: 2;
+  text-align: center;
 }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-p {
-    font-size: 16px;
-    margin-bottom: 20px;
+.section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-.arrowButton {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 10px 15px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+.arrow_container {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
-.arrowButton:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.arrow_btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.arrow_btn:hover {
+  transform: scale(1.1);
+}
+
+.section:nth-child(3) .arrow_btn {
+  background: #00215b;
 }
