@@ -1,6 +1,6 @@
 import React from "react";
 import "./VideoWithPlayButton.css";
-import ConstructionVideo from "../../assets/ConstructionVideo.mp4";
+import ConstructionVideo from "../../assets/construction.mp4";
 import ThumbnailImage from "../../assets/Thumbnail.svg";
 
 const VideoWithPlayButton = () => {
