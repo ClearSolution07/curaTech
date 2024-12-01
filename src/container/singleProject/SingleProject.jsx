@@ -57,7 +57,13 @@ return (
                             marginBottom: "40px",
                         }}
                     >
-                        <p style={{ textAlign: "justify" }}>
+                        <p
+                            style={{
+                                textAlign: "justify",
+                                fontSize: "1.2rem",
+                                lineHeight: "1.5",
+                            }}
+                        >
                             Contrary to popular belief, Lorem Ipsum is not
                             simply random text. It has roots in a piece of
                             classical Latin literature from 45 BC, making it
@@ -67,12 +73,18 @@ return (
                             consectetur, from a Lorem Ipsum passage, and going
                             through the cites of the word in classical
                             literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-                            Finibus Bonorum et Malorum" (The Extremes of Good
-                            and Evil) by Cicero, written in 45 BC. This book is
-                            a treatise on the theory of ethics,
+                            Ipsum comes from sections 1.10.32 and 1.10.33 of de
+                            Finibus Bonorum et Malorum (The Extremes of Good and
+                            Evil) by Cicero, written in 45 BC. This book is a
+                            treatise on the theory of ethics,
                         </p>
-                        <p style={{ textAlign: "justify" }}>
+                        <p
+                            style={{
+                                textAlign: "justify",
+                                fontSize: "1.2rem",
+                                lineHeight: "1.5",
+                            }}
+                        >
                             Contrary to popular belief, Lorem Ipsum is not
                             simply random text. It has roots in a piece of
                             classical Latin literature from 45 BC, making it
@@ -82,10 +94,10 @@ return (
                             consectetur, from a Lorem Ipsum passage, and going
                             through the cites of the word in classical
                             literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-                            Finibus Bonorum et Malorum" (The Extremes of Good
-                            and Evil) by Cicero, written in 45 BC. This book is
-                            a treatise on the theory of ethics,
+                            Ipsum comes from sections 1.10.32 and 1.10.33 of de
+                            Finibus Bonorum et Malorum (The Extremes of Good and
+                            Evil) by Cicero, written in 45 BC. This book is a
+                            treatise on the theory of ethics,
                         </p>
                     </div>
                     <div
@@ -130,26 +142,91 @@ return (
                     style={{
                         flex: 2,
                         textAlign: "justify",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "20px",
                     }}
                 >
-                    right section jshfbdshj dsjhfbdsjh jhgjh jhgjhg jvjgv jgvjgv
-                    hgvghv vjhgvgh vjhgvhjg vhgvgjk vjghkv ghkjvgk jkgh vkgv
-                    kjgv kjgfv kgjkhjg vghkj vghkj vhgfv hgfg ghj ghjf kjghfv
-                    khgvfkghj vghj vgjh vjgh vghv ghv ghvgh vhg vv v v vv v
-                    vvvvvvvvvvvv vghcjhf h vhcv jhvjh vh
+                    <h2 style={{ fontSize: "2rem", fontWeight: "bold" }}>
+                        Project Title
+                    </h2>
+
+                    <p style={{ fontSize: "1.2rem", lineHeight: "1.5" }}>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industrys
+                        standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it
+                        to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged.
+                    </p>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "10px",
+                        }}
+                    >
+                        <h3 style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+                            Project Info
+                        </h3>
+
+                        <div
+                            style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: "8px",
+                            }}
+                        >
+                            <div>
+                                <strong>Client:</strong> John Doe
+                            </div>
+                            <div>
+                                <strong>Category:</strong> Construction Business
+                            </div>
+                            <div>
+                                <strong>Completed on:</strong> 20 January 2022
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style={{
+                            display: "flex",
+                            gap: "10px",
+                        }}
+                    >
+                        <img
+                            src={phone}
+                            alt="Facebook"
+                            style={{
+                                width: "30px",
+                                height: "30px",
+                                borderRadius: "8px",
+                                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
+                            }}
+                        />
+                        <img
+                            src={phone}
+                            alt="Twitter"
+                            style={{
+                                width: "30px",
+                                height: "30px",
+                                borderRadius: "8px",
+                                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
+                            }}
+                        />
+                        <img
+                            src={phone}
+                            alt="LinkedIn"
+                            style={{
+                                width: "30px",
+                                height: "30px",
+                                borderRadius: "8px",
+                                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
+                            }}
+                        />
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div
-            style={{
-                width: "100vw",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-            }}
-        >
-            <div>
-                <div>Bottom section</div>
             </div>
         </div>
         <Project />
