@@ -3,7 +3,7 @@ import { Col, Typography } from "antd";
 import ruler from "../assets/ruler.png";
 import measuringTool from "../assets/measuring-tool.png";
 import engineer from "../assets/engineer.png";
-
+const { Title } = Typography;
 
 const FeatureSection = () => {
   const features = [
@@ -48,10 +48,12 @@ const FeatureSection = () => {
   return (
     <Col
       style={{
-        padding: "32px 48px",
+        padding: "36px 52px",
         backgroundColor: "white",
         width: "400px",
         borderTop: "5px solid #001ED3",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+        bottom: "16vh",
       }}
     >
       <Title level={3} style={{ color: "#00215b", textAlign: "left" }}>
@@ -74,6 +76,7 @@ const FeatureSection = () => {
               style={{
                 display: "flex",
                 flexDirection: "column",
+                gap: "8px",
                 textAlign: "left",
               }}
             >

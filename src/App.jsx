@@ -1,11 +1,11 @@
 import CommonCarousel from "./components/common/CommonCarousel";
 import slideImage from "./assets/slide.jpg";
-import Dashboard from "./container/dashboard/Dashboard"
+import Dashboard from "./container/dashboard/Dashboard";
 
 function App() {
-    return (
-        <>
-            {/* <CommonCarousel
+  return (
+    <>
+      {/* <CommonCarousel
                 heading="Discover New Horizons"
                 description="Explore opportunities and possibilities."
                 backgroundImage={slideImage}
@@ -16,9 +16,9 @@ function App() {
                     description: "We offer the best solutions for your needs.",
                 }}
             /> */}
-            <Dashboard />
-        </>
-    );
+      <Dashboard />
+    </>
+  );
 }
 
 export default App;

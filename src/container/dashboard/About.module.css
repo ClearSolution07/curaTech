@@ -26,6 +26,7 @@ body {
 .carouselSlide {
   flex: 1;
   max-width: 50%;
+  /* height: 440px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
