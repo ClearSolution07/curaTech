@@ -2,6 +2,7 @@ import CommonCarousel from "./components/common/CommonCarousel";
 import slideImage from "./assets/slide.jpg";
 import Dashboard from "./container/dashboard/Dashboard";
 import Contact from "./container/contact/Contact";
+import SingleProject from "./container/singleProject/SingleProject";
 
 function App() {
     return (
@@ -17,8 +18,9 @@ function App() {
                     description: "We offer the best solutions for your needs.",
                 }}
             /> */}
-            <Contact />
-            <Dashboard />
+            {/* <Contact /> */}
+            <SingleProject />
+            {/* <Dashboard /> */}
         </>
     );
 }
