@@ -77,7 +77,7 @@ const Navbar = () => {
   return (
     <div
       style={{
-        padding: "10px",
+        padding: "16px",
         marginLeft: "200px",
         marginRight: "200px",
         borderBottom: "1px solid #e8e8e8",
