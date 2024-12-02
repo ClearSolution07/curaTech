@@ -3,6 +3,7 @@ import slideImage from "./assets/slide.jpg";
 import Dashboard from "./container/dashboard/Dashboard";
 import Contact from "./container/contact/Contact";
 import SingleProject from "./container/singleProject/SingleProject";
+import AboutUs from "./container/aboutUs/AboutUs";
 
 function App() {
     return (
@@ -19,8 +20,9 @@ function App() {
                 }}
             /> */}
             {/* <Contact /> */}
-            <SingleProject />
-            {/* <Dashboard /> */}
+            {/* <SingleProject /> */}
+            {/* <Dashboard /> */}/
+            <AboutUs/>
         </>
     );
 }
