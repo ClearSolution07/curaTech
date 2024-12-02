@@ -3,6 +3,8 @@ import slideImage from "./assets/slide.jpg";
 import Dashboard from "./container/dashboard/Dashboard";
 import Contact from "./container/contact/Contact";
 import SingleProject from "./container/singleProject/SingleProject";
+import SingleService from "./container/singleService/SingleService";
+import ServiceArchive from "./container/serviceArchive/ServiceArchive";
 
 function App() {
     return (
@@ -19,7 +21,9 @@ function App() {
                 }}
             /> */}
             {/* <Contact /> */}
-            <SingleProject />
+            {/* <SingleProject /> */}
+            {/* <SingleService /> */}
+            <ServiceArchive />
             {/* <Dashboard /> */}
         </>
     );
