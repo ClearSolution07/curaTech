@@ -25,10 +25,10 @@ function App() {
             {/* <Contact /> */}
             {/* <SingleProject /> */}
             {/* <SingleService /> */}
-            <ServiceArchive />
-            {/* <Dashboard /> */}
-            {/* <Dashboard /> */}/
-            {/* <AboutUs/> */}/
+            {/* <ServiceArchive /> */}
+            <Dashboard />
+            {/* <AboutUs/>/ */}
+            {/* <Portfolio/>/ */}
         </>
     );
 }
