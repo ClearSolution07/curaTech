@@ -4,6 +4,7 @@ import Dashboard from "./container/dashboard/Dashboard";
 import Contact from "./container/contact/Contact";
 import SingleProject from "./container/singleProject/SingleProject";
 import AboutUs from "./container/aboutUs/AboutUs";
+import Portfolio from "./container/portfolio/Portfolio";
 
 function App() {
     return (
@@ -22,7 +23,8 @@ function App() {
             {/* <Contact /> */}
             {/* <SingleProject /> */}
             {/* <Dashboard /> */}/
-            <AboutUs/>
+            {/* <AboutUs/> */}/
+            <Portfolio/>
         </>
     );
 }
