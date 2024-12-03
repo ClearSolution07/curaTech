@@ -3,6 +3,8 @@ import slideImage from "./assets/slide.jpg";
 import Dashboard from "./container/dashboard/Dashboard";
 import Contact from "./container/contact/Contact";
 import SingleProject from "./container/singleProject/SingleProject";
+import SingleService from "./container/singleService/SingleService";
+import ServiceArchive from "./container/serviceArchive/ServiceArchive";
 import AboutUs from "./container/aboutUs/AboutUs";
 import Portfolio from "./container/portfolio/Portfolio";
 
@@ -22,9 +24,11 @@ function App() {
             /> */}
             {/* <Contact /> */}
             {/* <SingleProject /> */}
+            {/* <SingleService /> */}
+            <ServiceArchive />
+            {/* <Dashboard /> */}
             {/* <Dashboard /> */}/
             {/* <AboutUs/> */}/
-            <Portfolio/>
         </>
     );
 }
