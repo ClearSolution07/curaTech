@@ -1,0 +1,141 @@
+.about-section {
+  padding: 48px 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.image-column {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center;
+}
+
+.image {
+  width: 90%; /* Reduces the size of the image */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: none; /* Removes shadow */
+  margin: 0 auto; /* Centers the image */
+}
+
+.experience-overlay {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 3rem;
+  background-color: rgba(0, 0, 32, 0.9);
+  padding: 16px;
+  border-radius: 8px;
+  width: 40%; /* Adjust overlay width as needed */
+}
+
+.experience-number {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.plus {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.experience-text {
+  font-size: 0.875rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.content-column {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.about-us {
+  color: #dc2626;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.description {
+  color: #4b5563;
+}
+
+.author {
+  margin-top: 8px;
+}
+
+.author-name {
+  font-weight: 600;
+}
+
+.author-title {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.learn-more-button {
+  background-color: #dc2626;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #b91c1c;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: 96px 16px;
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .image-column,
+  .content-column {
+    flex-basis: 50%;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+}

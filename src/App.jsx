@@ -5,6 +5,8 @@ import Contact from "./container/contact/Contact";
 import SingleProject from "./container/singleProject/SingleProject";
 import SingleService from "./container/singleService/SingleService";
 import ServiceArchive from "./container/serviceArchive/ServiceArchive";
+import AboutUs from "./container/aboutUs/AboutUs";
+import Portfolio from "./container/portfolio/Portfolio";
 
 function App() {
     return (
@@ -25,6 +27,8 @@ function App() {
             {/* <SingleService /> */}
             <ServiceArchive />
             {/* <Dashboard /> */}
+            {/* <Dashboard /> */}/
+            {/* <AboutUs/> */}/
         </>
     );
 }
