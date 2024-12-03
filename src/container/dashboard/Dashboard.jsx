@@ -11,7 +11,7 @@ import VideoWithPlayButton from "./VideoWithPlayButton";
 function Dashboard() {
   return (
     <>
-      <Navbar />          
+      <Navbar />
       <Slider />
       <About />
       <ProcessSteps />
