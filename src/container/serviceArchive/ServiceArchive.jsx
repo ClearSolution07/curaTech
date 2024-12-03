@@ -43,7 +43,6 @@ function ServiceArchive() {
 
     return (
         <>
-            <Navbar />
 
             <CommonCarousel
                 heading="Service Archive"
@@ -93,7 +92,6 @@ function ServiceArchive() {
                     </div>
                 ))}
             </div>
-            <Footer />
         </>
     );
 }

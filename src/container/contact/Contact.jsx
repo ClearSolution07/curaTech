@@ -9,7 +9,6 @@ import SubmitForm from "./Form";
 function Contact() {
     return (
         <>
-            <Navbar />
             <CommonCarousel
                 heading="Contacts"
                 description="Explore opportunities and possibilities."
@@ -197,7 +196,6 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 }
