@@ -34,7 +34,6 @@ function SingleService() {
 
     return (
         <>
-            <Navbar />
             <CommonCarousel
                 heading="Single Service"
                 description="Explore opportunities and possibilities."
@@ -149,7 +148,6 @@ function SingleService() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     );
 }

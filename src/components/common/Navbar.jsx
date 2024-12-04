@@ -1,14 +1,5 @@
 import React, { useState } from "react";
-import {
-  Row,
-  Col,
-  Menu,
-  Typography,
-  Space,
-  Drawer,
-  Button,
-  Divider,
-} from "antd";
+import { Row, Col, Menu, Typography, Space, Drawer, Button, Divider } from "antd";
 import {
   TwitterOutlined,
   FacebookOutlined,
@@ -17,6 +8,7 @@ import {
   MenuOutlined,
   DownOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 import logoImage from "../../assets/logo-construction.png";
 
 const { Text } = Typography;
@@ -33,7 +25,7 @@ const Navbar = () => {
   };
 
   const menuItems = [
-    { label: "Home", key: "home" },
+    { label: <Link to="/">Home</Link>, key: "home" },
     {
       label: (
         <span>
@@ -43,35 +35,25 @@ const Navbar = () => {
       ),
       key: "services",
       children: [
-        { label: "Service 1", key: "service1" },
-        { label: "Service 2", key: "service2" },
+        { label: <Link to="/single-service">Single Service</Link>, key: "singleService" },
+        { label: <Link to="/service-archive">Service Archive</Link>, key: "serviceArchive" },
       ],
     },
     {
       label: (
         <span>
-          Pages <DownOutlined style={{ fontSize: "10px", marginLeft: "5px" }} />
+          Pages{" "}
+          <DownOutlined style={{ fontSize: "10px", marginLeft: "5px" }} />
         </span>
       ),
       key: "pages",
       children: [
-        { label: "Page 1", key: "page1" },
-        { label: "Page 2", key: "page2" },
+        { label: <Link to="/single-project">Single Project</Link>, key: "singleProject" },
+        { label: <Link to="/portfolio">Portfolio</Link>, key: "portfolio" },
       ],
     },
-    {
-      label: (
-        <span>
-          News <DownOutlined style={{ fontSize: "10px", marginLeft: "5px" }} />
-        </span>
-      ),
-      key: "news",
-      children: [
-        { label: "Latest News", key: "latestNews" },
-        { label: "Popular News", key: "popularNews" },
-      ],
-    },
-    { label: "Contacts", key: "contacts" },
+    { label: <Link to="/about-us">About Us</Link>, key: "aboutUs" },
+    { label: <Link to="/contact">Contacts</Link>, key: "contacts" },
   ];
 
   return (
@@ -141,9 +123,7 @@ const Navbar = () => {
         <Col xs={12} md={0} style={{ textAlign: "right" }}>
           <Button
             type="text"
-            icon={
-              <MenuOutlined style={{ fontSize: "24px", color: "#00215b" }} />
-            }
+            icon={<MenuOutlined style={{ fontSize: "24px", color: "#00215b" }} />}
             onClick={handleDrawerOpen}
           />
         </Col>

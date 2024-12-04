@@ -9,7 +9,6 @@ import Project from "./Projects"
 function SingleProject() {
 return (
     <>
-        <Navbar />
         <CommonCarousel
             heading="Contacts"
             description="Explore opportunities and possibilities."
@@ -230,7 +229,6 @@ return (
             </div>
         </div>
         <Project />
-        <Footer />
     </>
 );
 

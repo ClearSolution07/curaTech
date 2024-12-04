@@ -10,7 +10,6 @@ import HeroSection from "./HeroSection";
 function AboutUs() {
 return (
     <>
-        <Navbar />
         <CommonCarousel
             heading="About Us"
             description="Home / About Us"
@@ -28,7 +27,6 @@ return (
         <HeroSection/>
         
        
-        <Footer />
     </>
 );
 

@@ -10,7 +10,6 @@ import ImageGallery from "./ImageGallery";
 function Portfolio() {
 return (
     <>
-        <Navbar />
         <CommonCarousel
             heading="Portfolio Archive"
             description="Home / Portfolio Archive"
@@ -27,7 +26,6 @@ return (
         <ImageGallery/>
         
        
-        <Footer />
     </>
 );
 
