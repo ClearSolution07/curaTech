@@ -1,6 +1,4 @@
-import Navbar from "../../components/common/Navbar";
 import CommonCarousel from "../../components/common/CommonCarousel";
-import Footer from "../../components/common/FooterComponent";
 import slideImage from "../../assets/slide.jpg";
 import phone from "../../assets/phone.png";
 import image from "../../assets/img.png";
@@ -23,7 +21,6 @@ return (
         <div
             style={{
                 margin: "100px 0 100px 0",
-                width: "100vw",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",

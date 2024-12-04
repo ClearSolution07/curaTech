@@ -1,6 +1,4 @@
-import Navbar from "../../components/common/Navbar";
 import CommonCarousel from "../../components/common/CommonCarousel";
-import Footer from "../../components/common/FooterComponent";
 import slideImage from "../../assets/slide.jpg";
 import styles from "./ServiceArchive.module.css";
 import image from "../../assets/img.png";

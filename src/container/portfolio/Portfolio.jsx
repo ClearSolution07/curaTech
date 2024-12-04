@@ -1,10 +1,6 @@
-import Navbar from "../../components/common/Navbar";
 import CommonCarousel from "../../components/common/CommonCarousel";
-import Footer from "../../components/common/FooterComponent";
 import slideImage from "../../assets/Portfolio.svg";
 import ImageGallery from "./ImageGallery";
-
-
 
 
 function Portfolio() {
@@ -24,8 +20,6 @@ return (
           
         />
         <ImageGallery/>
-        
-       
     </>
 );
 

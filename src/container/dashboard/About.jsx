@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import myImage from "../../assets/about.png"; // Replace with your image path
+import myImage from "../../assets/about.png";
 
 const About = () => (
     <div className={styles.sliderContainer}>
