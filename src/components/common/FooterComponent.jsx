@@ -5,7 +5,7 @@ import {
     LinkedinOutlined,
     YoutubeOutlined,
 } from "@ant-design/icons";
-import logoImage from "../../assets/logo_light.png";
+import logoImage from "../../assets/logo.png";
 
 const { Title, Text, Link } = Typography;
 
@@ -35,7 +35,7 @@ const FooterComponent = () => {
                             <img
                                 src={logoImage}
                                 alt="Dustro Logo"
-                                style={{ width: "150px", height: "auto" }}
+                                style={{ width: "120px", height: "auto" }}
                             />
                         </Row>
 

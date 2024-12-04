@@ -41,7 +41,6 @@ function ServiceArchive() {
 
     return (
         <>
-
             <CommonCarousel
                 heading="Service Archive"
                 description="Explore opportunities and possibilities."
@@ -49,8 +48,8 @@ function ServiceArchive() {
                 showFloatingContact={true}
                 containerStyle={{}}
                 floatingContactProps={{
-                    title: "We Construct and Manage Places and Infrastructures",
-                    description: "We offer the best solutions for your needs.",
+                    title: "Call Us Today",
+                    description: "+1 123 4567 789",
                 }}
             />
             <div

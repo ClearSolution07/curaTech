@@ -9,6 +9,9 @@ const FloatingContact = ({ title, description }) => (
             width: "450px",
             left: "16vw",
             bottom: "8vh",
+            borderTop: "8px solid #b02636",
+            boxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
         }}
     >
         <Row level={2} style={{ color: "#00215b", textAlign: "left" }}>

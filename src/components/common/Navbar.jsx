@@ -18,7 +18,7 @@ import {
     DownOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import logoImage from "../../assets/logo-construction.png";
+import logoImage from "../../assets/logo.png";
 
 const { Text } = Typography;
 
@@ -84,7 +84,7 @@ const Navbar = () => {
     return (
         <div
             style={{
-                padding: "16px",
+                padding: "8px",
                 marginLeft: "200px",
                 marginRight: "200px",
                 borderBottom: "1px solid #e8e8e8",
@@ -137,7 +137,7 @@ const Navbar = () => {
                     <img
                         src={logoImage}
                         alt="Dustro Logo"
-                        style={{ width: "80px", height: "30px" }}
+                        style={{ width: "60px"}}
                     />
                 </Col>
                 <Col xs={0} md={18}>
