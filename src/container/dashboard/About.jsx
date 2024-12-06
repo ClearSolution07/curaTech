@@ -5,7 +5,7 @@ const About = () => (
     <div className={styles.sliderContainer}>
         <div className={styles.carouselSlide}>
             <div className={styles.title}>About Us</div>
-            <div className={styles.heading}>sliderContainer</div>
+            <div className={styles.heading}>Slider Container</div>
             <div className={styles.subheading}>
                 {" "}
                 Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat
@@ -18,7 +18,7 @@ const About = () => (
                 pellentesque
             </div>
             <div className={styles.buttonContainer}>
-                <button className={styles.slideButton}>Button</button>
+                <button className={styles.slideButton}>Know More</button>
             </div>
         </div>
 

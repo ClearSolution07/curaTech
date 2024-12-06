@@ -137,7 +137,7 @@ const Navbar = () => {
                     <img
                         src={logoImage}
                         alt="Dustro Logo"
-                        style={{ width: "60px"}}
+                        style={{ width: "60px" }}
                     />
                 </Col>
                 <Col xs={0} md={18}>

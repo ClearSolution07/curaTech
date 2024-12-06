@@ -1,78 +1,91 @@
-.contactInfoContainer {
-    width: 100%;
-    position: relative;
-}
-
 .mapBackground {
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 400px; /* Keeps the original height */
     position: relative;
+    z-index: 1; /* Ensures the map stays at the back */
 }
 
 .addressBox {
-    position: absolute;
-    bottom: -4rem;
-    left: 28rem;
+    position: absolute; /* Keeps the box over the map */
+    bottom: -4rem; /* Ensures it overlaps the map */
+    left: 50%;
+    transform: translateX(-50%);
     background: #ffffff;
     padding: 20px;
-    width: 250px;
+    width: 300px;
     border-top: 5px solid #d71920;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.addressBox h5 {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.addressBox p {
-    font-size: 1rem;
-    color: #001d52;
-    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px #00000026;
+    text-align: center;
+    z-index: 2; /* Keeps it above the map */
 }
 
 .addressAndDetails {
     display: flex;
-    align-items: flex-start;
-    margin-left: 12rem;
-    gap: 24px;
-    margin-top: 2rem;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between; /* Space between address and details */
+    margin: 6rem auto 0; /* Adds margin to account for the map overlap */
+    gap: 16px;
+    max-width: 1200px;
+    position: relative; /* Maintains layout positioning */
+    z-index: 2;
 }
 
 .contactDetails {
+    flex: 1 1 300px; /* Matches the size of the address box */
     display: flex;
-    justify-content: space-between;
-    column-gap: 24px;
-    margin-left: 46.2rem;
+    flex-wrap: wrap;
+    gap: 12px;
     background: #ffffff;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
 }
 
-.detailBox {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+/* Responsive Adjustments */
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .mapBackground {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .addressBox {
+        width: 260px; /* Smaller width for tablets */
+        bottom: -3rem;
+    }
+
+    .addressAndDetails {
+        gap: 12px; /* Reduce gap for compact layout */
+    }
+
+    .contactDetails {
+        flex: 1 1 calc(50% - 12px); /* Two boxes per row */
+    }
 }
 
-.detailBox h5 {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
+/* Mobile view */
+@media (max-width: 480px) {
+    .mapBackground {
+        height: 200px; /* Maintain visibility on mobile */
+    }
 
-.detailBox p {
-    font-size: 0.9rem;
-    color: #333;
-    margin: 0;
-    line-height: 1.5;
-}
+    .addressBox {
+        bottom: -2rem;
+        width: auto;
+        left: 1rem;
+        right: 1rem;
+    }
 
-.icon {
-    font-size: 32px;
-    color: #d71920;
+    .addressAndDetails {
+        flex-direction: column; /* Stack items vertically */
+        gap: 16px;
+    }
+
+    .contactDetails {
+        flex: 1 1 100%; /* Full width for details */
+    }
 }

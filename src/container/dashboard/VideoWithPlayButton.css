@@ -5,7 +5,6 @@
     margin-bottom: 4rem;
     overflow: hidden;
     background-color: #000;
-    height: 30%;
 }
 
 .video-player {
@@ -51,9 +50,38 @@
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 2;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .play-button:hover {
     transform: scale(1.1);
+    color: #001d52;;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsiveness for tablets and smaller screens */
+@media (max-width: 768px) {
+    .video-container {
+        padding-bottom: 56.25%; /* Adjust for a 16:9 aspect ratio on smaller screens */
+        margin-bottom: 2rem;
+    }
+
+    .play-button {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 480px) {
+    .video-container {
+        padding-bottom: 75%; /* Adjust for a 4:3 aspect ratio on mobile */
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
 }

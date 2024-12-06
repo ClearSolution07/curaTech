@@ -4,13 +4,13 @@
     margin-bottom: 24px;
     height: 400px;
     padding-bottom: 2rem;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
-
 .section {
     flex: 1;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: c;
     justify-content: center;
     color: white;
     text-align: center;
@@ -78,4 +78,84 @@
 
 .section:nth-child(3) .arrow_btn {
     background: #00215b;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+    .section_container {
+        height: 500px;
+    }
+
+    .section h3 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1.25rem;
+    }
+
+    .arrow_btn {
+        font-size: 1.75rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+    .section_container {
+        height: 600px;
+    }
+
+    .section h3 {
+        font-size: 2.5rem;
+    }
+
+    .section p {
+        font-size: 1.5rem;
+    }
+
+    .arrow_btn {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 767px) {
+    .section_container {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .section {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .section:first-child {
+        flex: 1;
+    }
+
+    .section:not(:first-child) {
+        flex: 1;
+    }
+
+    .section:not(:first-child):hover {
+        flex: 1;
+        transform: scale(1);
+    }
+
+    .section h3 {
+        font-size: 1.25rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .arrow_btn {
+        font-size: 1.25rem;
+        padding: 0.5rem;
+    }
 }
