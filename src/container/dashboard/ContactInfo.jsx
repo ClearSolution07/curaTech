@@ -1,7 +1,6 @@
 import styles from "./ContactInfo.module.css";
 import { PhoneOutlined, MessageOutlined } from "@ant-design/icons";
 
-
 const ContactInfo = () => {
     return (
         <div

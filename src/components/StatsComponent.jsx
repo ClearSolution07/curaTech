@@ -34,6 +34,7 @@ const StatsComponent = () => {
             <Col
                 span={12}
                 
+                
                 style={{
                     backgroundColor: "#d32f2f",
                     color: "white",

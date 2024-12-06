@@ -1,8 +1,9 @@
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/slide.jpg";
-import phone from "../../assets/phone.png";
-import image from "../../assets/img.png";
+import phone from "../../assets/8jb.jpg";
+import image from "../../assets/7jb.jpg";
 import Project from "./Projects"
+
 
 
 

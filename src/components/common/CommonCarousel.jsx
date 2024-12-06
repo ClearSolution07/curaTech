@@ -35,7 +35,6 @@ const CommonCarousel = ({
     </div>
 );
 
-
 CommonCarousel.propTypes = {
     heading: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,

@@ -6,7 +6,6 @@ import ContactInfo from "./ContactInfo";
 import Testimonials from "./Testimonials";
 import VideoWithPlayButton from "./VideoWithPlayButton";
 
-
 function Dashboard() {
     return (
         <>

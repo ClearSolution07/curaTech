@@ -17,6 +17,7 @@ const About = () => (
                 rutrum leo consectetur accumsan. Vivamus viverra ante turpis,
                 dignissim condimentum elit egestas sit amet. Phasellus faucibus
                 pellentesque
+    
             </div>
             <div className={styles.buttonContainer}>
                 <button className={styles.slideButton}>Know More</button>
