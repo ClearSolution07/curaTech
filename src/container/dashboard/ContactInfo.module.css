@@ -6,6 +6,7 @@
     z-index: 1; /* Ensures the map stays at the back */
 }
 
+
 .addressBox {
     position: absolute; /* Keeps the box over the map */
     bottom: -4rem; /* Ensures it overlaps the map */

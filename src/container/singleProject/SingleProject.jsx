@@ -5,6 +5,7 @@ import image from "../../assets/img.png";
 import Project from "./Projects"
 
 
+
 function SingleProject() {
 return (
     <>

@@ -6,6 +6,7 @@
     padding-bottom: 2rem;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
+
 .section {
     flex: 1;
     height: 100%;

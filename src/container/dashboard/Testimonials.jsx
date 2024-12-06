@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./testimonials.css";
 import testimonial from "../../assets/testimonial.png";
 
+
 const testimonials = [
     {
         id: 1,

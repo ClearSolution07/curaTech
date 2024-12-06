@@ -3,6 +3,7 @@ import office2 from "../../assets/office2.png";
 import office3 from "../../assets/office3.png";
 import office4 from "../../assets/office4.png";
 
+
 const Project = () => {
     const projects = [
         {
