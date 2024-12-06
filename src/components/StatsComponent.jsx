@@ -31,8 +31,6 @@ const StatsComponent = () => {
                     Completed Projects
                 </Text>
             </Col>
-
-
             <Col
                 span={12}
                 style={{

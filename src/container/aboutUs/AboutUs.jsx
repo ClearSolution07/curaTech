@@ -4,8 +4,6 @@ import AboutSection from "./AboutSection";
 import HeroSection from "./HeroSection";
 
 
-
-
 function AboutUs() {
 return (
     <>

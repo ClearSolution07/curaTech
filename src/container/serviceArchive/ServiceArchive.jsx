@@ -3,7 +3,6 @@ import slideImage from "../../assets/slide.jpg";
 import styles from "./ServiceArchive.module.css";
 import image from "../../assets/img.png";
 
-
 function ServiceArchive() {
     const contentList = [
         {

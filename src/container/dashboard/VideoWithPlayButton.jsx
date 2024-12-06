@@ -2,7 +2,6 @@ import React from "react";
 import "./VideoWithPlayButton.css";
 import ThumbnailImage from "../../assets/Thumbnail.svg";
 
-
 const VideoWithPlayButton = () => {
     const [isPlaying, setIsPlaying] = React.useState(false);
 

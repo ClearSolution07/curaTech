@@ -3,13 +3,12 @@ import ruler from "../assets/ruler.png";
 import measuringTool from "../assets/measuring-tool.png";
 import engineer from "../assets/engineer.png";
 const { Title } = Typography;
-
 const FeatureSection = () => {
     const features = [
         {
             icon: (
                 <img
-                
+
                     src={engineer}
                     alt="Engineer Logo"
                     style={{ width: "40px", height: "40px" }}
