@@ -1,7 +1,9 @@
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/slide.jpg";
 import styles from "./ServiceArchive.module.css";
-import image from "../../assets/img.png";
+import image from "../../assets/3jb.jpg";
+
+
 
 function ServiceArchive() {
     const contentList = [

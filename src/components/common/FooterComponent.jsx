@@ -280,6 +280,7 @@ const FooterComponent = () => {
             </Row>
         </div>
     );
+
 };
 
 export default FooterComponent;

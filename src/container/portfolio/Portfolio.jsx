@@ -3,6 +3,8 @@ import slideImage from "../../assets/Portfolio.svg";
 import ImageGallery from "./ImageGallery";
 
 
+
+
 function Portfolio() {
 return (
     <>

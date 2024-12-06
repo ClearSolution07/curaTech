@@ -2,6 +2,8 @@ import styles from "./ProcessSteps.module.css";
 import researchAnalysis from "../../assets/researchAnalysis.png";
 import service1 from "../../assets/Service1.png";
 import service2 from "../../assets/Service2.png";
+import jb4 from "../../assets/4jb.jpg";
+
 
 const ProcessSteps = () => {
     const sections = [
@@ -9,7 +11,7 @@ const ProcessSteps = () => {
             title: null,
             description: null,
             background: "transparent",
-            image: researchAnalysis,
+            image: jb4,
             showContent: false,
         },
         {

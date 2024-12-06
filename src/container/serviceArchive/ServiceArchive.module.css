@@ -7,7 +7,10 @@
     background-color: #d2153d;
     max-height: 420px;
     overflow: hidden;
+    margin: 0 auto; /* Center the container */
 }
+
+
 
 .image {
     width: 50%;
@@ -53,4 +56,66 @@
     background-color: #fff;
     color: #d2153d;
     border-color: #d2153d;
+}
+
+/* Responsiveness for tablets */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack image and description */
+        width: 90%; /* Adjust width */
+        max-height: none; /* Allow dynamic height */
+    }
+
+    .image {
+        width: 100%; /* Make the image take full width */
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    .descriptionContainer {
+        width: 100%;
+        padding: 24px; /* Reduce padding */
+    }
+
+    .heading {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Reduce font size */
+    }
+
+    .button {
+        padding: 12px 32px; /* Adjust padding */
+        font-size: 0.65rem;
+    }
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Use full width for mobile */
+    }
+
+    .image {
+        height: 150px; /* Further reduce height */
+    }
+
+
+    .descriptionContainer {
+        padding: 16px; /* Further reduce padding */
+    }
+
+    .heading {
+        font-size: 1.25rem; /* Further reduce font size */
+    }
+
+    .description {
+        font-size: 0.85rem; /* Adjust text size */
+        margin-bottom: 12px; /* Reduce spacing */
+    }
+
+    .button {
+        padding: 10px 24px; /* Smaller buttons */
+        font-size: 0.6rem; /* Smaller font size */
+    }
 }

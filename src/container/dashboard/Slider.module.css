@@ -1,3 +1,5 @@
+
+
 html,
 body {
     padding: 0;
@@ -19,11 +21,13 @@ body {
     align-items: center;
     height: 80vh;
     text-align: center;
-    background: url("../../assets/slide.jpg") no-repeat center center;
+    background: url("src/assets/10jb.jpg") no-repeat center center;
     background-size: cover;
 }
 
-.heading {
+/* Typography for headings and descriptions */
+.heading,
+.description {
     width: 50%;
     font-size: 24px;
     color: #fff;
@@ -34,15 +38,10 @@ body {
 }
 
 .description {
-    width: 50%;
     font-size: 16px;
-    color: #fff;
-    margin: 0 auto 20px;
-    line-height: 1.6;
-    display: flex !important;
-    text-align: justify;
 }
 
+/* Button styles */
 .buttonContainer {
     width: 50%;
     font-size: 16px;
@@ -50,25 +49,172 @@ body {
     margin: 0 auto 20px;
     line-height: 1.6;
     display: flex !important;
-    text-align: justify;
+    text-align: center;
 }
 
 .slideButton {
-    padding: 10px 20px;
-    background-color: #1890ff;
-    color: #ffffff;
+    background-color: #001d52;
+    color: white;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1rem;
+}
+
+.blink-once {
+    animation: blink 0.5s;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 .slideButton:hover {
-    background-color: #40a9ff;
+    background-color: hsl(0, 74%, 42%);
+    transform: translateY(-2px);
 }
 
 .FloatingContainer {
     display: flex;
     justify-content: center;
     margin-left: 24vw;
+}
+
+@media (max-width: 768px) {
+    .carouselSlide {
+        height: auto;
+        padding: 15px;
+    }
+
+    .heading,
+    .description,
+    .buttonContainer {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .slideButton {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    .FloatingContainer {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carouselSlide {
+        height: auto;
+        padding: 20px;
+    }
+
+    .heading,
+    .description,
+    .buttonContainer {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .slideButton {
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+
+    .FloatingContainer {
+        margin-left: 5vw;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carouselSlide {
+        height: 70vh;
+        padding: 0 30px;
+    }
+
+    .heading,
+    .description,
+    .buttonContainer {
+        width: 60%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+
+    .description {
+        font-size: 16px;
+    }
+
+    .slideButton {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .FloatingContainer {
+        margin-left: 20vw;
+        justify-content: center;
+    }
+}
+
+
+/* Desktop view (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .carouselSlide {
+        height: 80vh; /* Default desktop height */
+    }
+
+    .heading,
+    .description,
+    .buttonContainer {
+        width: 50%; /* Standard width for desktop */
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .slideButton {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .FloatingContainer {
+        margin-left: 24vw; /* Standard desktop alignment */
+    }
 }

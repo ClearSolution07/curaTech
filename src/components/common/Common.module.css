@@ -5,7 +5,6 @@
     background-color: #f8f9fa;
     height: 400px;
 }
-
 .leftContainer {
     width: 36%;
     padding: 36px;
@@ -37,4 +36,5 @@
 .description {
     font-size: 12px;
     color: #777;
+
 }

@@ -93,6 +93,8 @@
     margin-bottom: 0.5rem;
 }
 
+
+
 .featureContent p {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -114,12 +116,29 @@
     transform: rotate(90deg);
 }
 
+/* Responsiveness for tablets (medium screens) */
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .overlayContent h3,
+    .featureContent h3 {
+        font-size: 1.1rem;
+    }
+
+    .overlayContent p,
+    .featureContent p {
+        font-size: 0.85rem;
+    }
+
+    .plusIcon {
+        width: 40px;
+        height: 40px;
+    }
 }
 
+/* Responsiveness for mobile devices (small screens) */
 @media (max-width: 480px) {
     .gallery {
         grid-template-columns: 1fr;
@@ -130,7 +149,13 @@
         font-size: 1rem;
     }
 
-    .featureContent h3 {
-        font-size: 1.25rem;
+    .overlayContent p,
+    .featureContent p {
+        font-size: 0.75rem;
+    }
+
+    .plusIcon {
+        width: 36px;
+        height: 36px;
     }
 }

@@ -1,8 +1,10 @@
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/slide.jpg";
 import styles from "./SingleService.module.css";
-import phone from "../../assets/phone.png";
-import image from "../../assets/img.png";
+import phone from "../../assets/5jb.jpg";
+import image from "../../assets/3jb.jpg";
+
+
 
 function SingleService() {
 
