@@ -9,6 +9,7 @@ const FeatureSection = () => {
         {
             icon: (
                 <img
+                
                     src={engineer}
                     alt="Engineer Logo"
                     style={{ width: "40px", height: "40px" }}

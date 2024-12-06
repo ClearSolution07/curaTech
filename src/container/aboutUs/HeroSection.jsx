@@ -16,6 +16,7 @@ const HeroSection = () => {
                 </button>
             </div>
 
+
             <div className={styles.cardsContainer}>
                 <div className={styles.card}>
                     <div className={styles.cardNumber}>01</div>

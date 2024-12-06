@@ -2,6 +2,7 @@ import styles from "./ImageGallery.module.css";
 import { Plus } from "lucide-react";
 import img2 from "../../assets/placeholder2.svg?height=400&width=400";
 
+
 const ImageGallery = () => {
     const images = [
         {

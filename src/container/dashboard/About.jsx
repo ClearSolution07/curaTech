@@ -1,6 +1,7 @@
 import styles from "./About.module.css";
 import myImage from "../../assets/about.png";
 
+
 const About = () => (
     <div className={styles.sliderContainer}>
         <div className={styles.carouselSlide}>

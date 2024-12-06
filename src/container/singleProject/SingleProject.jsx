@@ -4,6 +4,7 @@ import phone from "../../assets/phone.png";
 import image from "../../assets/img.png";
 import Project from "./Projects"
 
+
 function SingleProject() {
 return (
     <>

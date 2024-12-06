@@ -1,6 +1,7 @@
 import "./AboutSection.css";
 import image from "../../assets/AboutHuman.svg";
 
+
 const AboutSection = () => {
     return (
         <section className="about-section">

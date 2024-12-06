@@ -28,6 +28,7 @@ const FloatingContact = ({ title, description }) => (
     </Col>
 );
 
+
 FloatingContact.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,

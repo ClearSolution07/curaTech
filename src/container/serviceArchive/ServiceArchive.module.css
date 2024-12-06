@@ -10,6 +10,7 @@
     margin: 0 auto; /* Center the container */
 }
 
+
 .image {
     width: 50%;
     height: 100%;
@@ -97,6 +98,7 @@
     .image {
         height: 150px; /* Further reduce height */
     }
+
 
     .descriptionContainer {
         padding: 16px; /* Further reduce padding */

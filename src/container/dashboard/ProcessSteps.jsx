@@ -5,6 +5,7 @@ import service2 from "../../assets/Service2.png";
 import jb4 from "../../assets/4jb.jpg";
 
 
+
 const ProcessSteps = () => {
     const sections = [
         {

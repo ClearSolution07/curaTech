@@ -32,6 +32,7 @@ const StatsComponent = () => {
                 </Text>
             </Col>
 
+
             <Col
                 span={12}
                 style={{
