@@ -1,26 +1,8 @@
 import React, { useState } from "react";
-import {
-    Row,
-    Col,
-    Menu,
-    Typography,
-    Space,
-    Drawer,
-    Button,
-    Divider,
-} from "antd";
-import {
-    TwitterOutlined,
-    FacebookOutlined,
-    LinkedinOutlined,
-    YoutubeOutlined,
-    MenuOutlined,
-    DownOutlined,
-} from "@ant-design/icons";
+import { Row, Col, Menu, Drawer, Button, Divider } from "antd";
+import { MenuOutlined, DownOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import logoImage from "../../assets/logo.png";
-
-const { Text } = Typography;
 
 const Navbar = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -84,54 +66,16 @@ const Navbar = () => {
     return (
         <div
             style={{
+                position: "sticky",
+                top: 0,
+                zIndex: 1000,
+                background: "#fff",
                 padding: "8px",
-                marginLeft: "200px",
-                marginRight: "200px",
+                paddingLeft: "200px",
+                paddingRight: "200px",
                 borderBottom: "1px solid #e8e8e8",
             }}
         >
-            <Row justify="space-between" align="middle">
-                <Col>
-                    <Space size="large">
-                        <Text
-                            strong
-                            style={{ fontSize: "12px", color: "#555" }}
-                        >
-                            SUPPORT
-                        </Text>
-                        <Text
-                            strong
-                            style={{ fontSize: "12px", color: "#555" }}
-                        >
-                            PARTNERS
-                        </Text>
-                        <Text
-                            strong
-                            style={{ fontSize: "12px", color: "#555" }}
-                        >
-                            CAREERS
-                        </Text>
-                    </Space>
-                </Col>
-                <Col>
-                    <Space size="middle">
-                        <TwitterOutlined
-                            style={{ fontSize: "24px", color: "#00215b" }}
-                        />
-                        <FacebookOutlined
-                            style={{ fontSize: "24px", color: "#00215b" }}
-                        />
-                        <LinkedinOutlined
-                            style={{ fontSize: "24px", color: "#00215b" }}
-                        />
-                        <YoutubeOutlined
-                            style={{ fontSize: "24px", color: "#00215b" }}
-                        />
-                    </Space>
-                </Col>
-            </Row>
-            <Divider style={{ margin: "10px 0px", borderColor: "#ddd" }} />
-
             <Row justify="space-between" align="middle">
                 <Col xs={12} md={6}>
                     <img
