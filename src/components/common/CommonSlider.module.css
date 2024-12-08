@@ -22,24 +22,31 @@ html, body {
   
   
   .heading {
-      width: 50%;
-      font-size: 24px;
-      color: #fff;    
-      margin: 0 auto 20px;
-      line-height: 1.6;
-      display: flex !important;
-      text-align: justify;
-  }
-  
-  .description {
-      width: 50%;
-      font-size: 16px;
-      color: #fff;
-      margin: 0 auto 20px;
-      line-height: 1.6;
-      display: flex !important;
-      text-align: justify;
-  }
+    width: 50%;
+    font-size: 35px; /* Increased font size for better prominence */
+    color: #fff;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    display: flex !important;
+    text-align: center; /* Center-align for better heading appearance */
+    font-family: 'Josh', sans-serif; /* Updated font */
+    text-transform: uppercase; /* Makes the text all uppercase */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for emphasis */
+}
+
+.description {
+    width: 50%;
+    font-size: 16px; /* Font size for paragraph text */
+    color: #fff;
+    margin: 0 auto 20px;
+    line-height: 1.8; /* Increased line-height for better readability */
+    display: flex !important;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif; /* Updated font */
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); /* Enhanced shadow for depth */
+}
+
+
   
   .buttonContainer {
       width: 50%;

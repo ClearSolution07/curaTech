@@ -1,7 +1,4 @@
 /* text section */
-
-
-
 .container {
     display: flex;
     align-items: center;
@@ -58,21 +55,42 @@
     line-height: 1.5;
 }
 
-.cardButton {
-    align-self: flex-start;
-    background-color: white;
-    color: red;
+.buttonContainer {
+    margin-top: 20px;
+}
+
+.slideButton {
+    background-color: #dc2626;
+    color: white;
+    padding: 12px 24px;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
+    border-radius: 4px;
+    font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1rem;
     text-transform: uppercase;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blink-once {
+    animation: blink 0.5s;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.slideButton:hover {
+    background-color: #001d52;
+    transform: translateY(-2px);
 }
 
 /* image section */
-
 .imageContainer {
     display: flex;
     gap: 16px;
@@ -119,17 +137,35 @@
     line-height: 1.5;
 }
 
-.button {
-    align-self: flex-start;
-    background-color: #b02636;
+.slideButton {
+    background-color: #dc2626;
     color: white;
+    padding: 8px 16px;  /* Reduced padding */
     border: none;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: bold;
+    border-radius: 4px;
+    font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 0.9rem;  /* Reduced font size */
     text-transform: uppercase;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blink-once {
+    animation: blink 0.5s;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.slideButton:hover {
+    background-color: #001d52;
+    transform: translateY(-2px);
 }
 
 /* Responsive Styles */
@@ -190,9 +226,13 @@
         font-size: 1rem;
     }
 
-    .cardButton {
+    .buttonContainer {
+        margin-top: 10px;
+    }
+
+    .slideButton {
         font-size: 0.9rem;
-        padding: 8px 16px;
+        padding: 10px 20px;
     }
 
     .image {
@@ -211,10 +251,5 @@
 
     .description {
         font-size: 20px;
-    }
-
-    .button {
-        font-size: 12px;
-        padding: 6px 12px;
     }
 }

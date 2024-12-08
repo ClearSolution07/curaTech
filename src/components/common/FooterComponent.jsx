@@ -5,7 +5,7 @@ import {
     LinkedinOutlined,
     YoutubeOutlined,
 } from "@ant-design/icons";
-import logoImage from "../../assets/logo.png";
+import logoImage from "../../assets/Cura Tech Enginnering WithoutB.png";
 
 const { Title, Text, Link } = Typography;
 

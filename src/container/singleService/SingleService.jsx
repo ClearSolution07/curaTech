@@ -126,7 +126,26 @@ function SingleService() {
                             A brief description goes here. Add meaningful and
                             concise information.
                         </p>
-                        <button className={styles.cardButton}>&rarr;</button>
+                        <div className={styles.buttonContainer}>
+                            <button
+                                className={styles.slideButton}
+                                style={{
+                                backgroundColor: "#001d52",
+                                color: "white",
+                                padding: "12px 24px",
+                                border: "none",
+                                borderRadius: "4px",
+                                fontWeight: "600",
+                                cursor: "pointer",
+                                transition: "background-color 0.3s ease, transform 0.2s",
+                                fontSize: "1rem",
+                                textTransform: "uppercase",
+                                }}
+                            >
+                                Know More
+                            </button>
+                            </div>
+
                     </div>
                 </div>
                 <div>
@@ -140,9 +159,9 @@ function SingleService() {
                                 <div className={styles.description}>
                                     {card.description}
                                 </div>
-                                <button className={styles.button}>
-                                    Explore
-                                </button>
+                                <div className={styles.buttonContainer}>
+                                        <button className={styles.slideButton}>Know More</button>
+                                </div>
                             </div>
                         ))}
                     </div>

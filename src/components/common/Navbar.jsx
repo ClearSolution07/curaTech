@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Row, Col, Menu, Drawer, Button, Divider } from "antd";
 import { MenuOutlined, DownOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import logoImage from "../../assets/logo.png";
+import logoImage from "../../assets/Cura Tech Enginnering WithoutB.png";
 
 const Navbar = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);

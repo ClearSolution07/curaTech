@@ -1,5 +1,4 @@
 
-
 html,
 body {
     padding: 0;
@@ -25,20 +24,33 @@ body {
     background-size: cover;
 }
 
-.heading,
-.description {
+.heading {
     width: 50%;
-    font-size: 24px;
+    font-size: 35px;
     color: #fff;
     margin: 0 auto 20px;
     line-height: 1.6;
     display: flex !important;
-    text-align: justify;
+    text-align: center; /* Center-align for a better heading appearance */
+    font-family: 'Josh', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Slightly stronger shadow for emphasis */
 }
 
 .description {
+    width: 50%;
     font-size: 16px;
+    color: #fff;
+    margin: 0 auto 20px;
+    line-height: 1.8; /* Increased line-height for better readability */
+    display: flex !important;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); /* Increased shadow for better depth */
 }
+
+
+
 
 .buttonContainer {
     width: 50%;
@@ -153,36 +165,5 @@ body {
     .FloatingContainer {
         margin-left: 5vw;
         justify-content: center;
-    }
-}
-
-@media (min-width: 1024px) {
-    .carouselSlide {
-        height: 80vh;
-    }
-
-    .heading,
-    .description,
-    .buttonContainer {
-        width: 50%;
-    }
-
-    .heading {
-        font-size: 24px;
-        margin-bottom: 16px;
-    }
-
-    .description {
-        font-size: 16px;
-    }
-
-    .slideButton {
-        margin-top: 16px;
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .FloatingContainer {
-        margin-left: 24vw;
     }
 }
