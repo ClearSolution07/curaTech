@@ -7,6 +7,7 @@ import ServiceArchive from "./container/serviceArchive/ServiceArchive";
 import AboutUs from "./container/aboutUs/AboutUs";
 import Portfolio from "./container/portfolio/Portfolio";
 import AppLayout from "./routConfig/AppLayout";
+import './app.css';
 
 function App() {
     return (
