@@ -11,9 +11,9 @@ const HeroSection = () => {
                     typesetting industry. Lorem Ipsum has been the industrys
                     standard dummy text ever since the 1500s.
                 </p>
-                <button className={styles.appointmentButton}>
-                    Appointment →
-                </button>
+                <div className={styles.buttonContainer}>
+                    <button className={styles.slideButton}>Know More</button>
+                </div>
             </div>
 
             <div className={styles.cardsContainer}>
