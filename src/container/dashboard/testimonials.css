@@ -6,7 +6,7 @@
 }
 
 .testimonials-label {
-    color: #ff0000;
+    color: #db191f;
     text-transform: uppercase;
     font-size: 2em;
     margin-bottom: 10px;
@@ -98,7 +98,7 @@
 }
 
 .dot.active {
-    background: #ff0000;
+    background: #db191f;
 }
 
 /* Tablet and larger screens */

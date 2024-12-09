@@ -32,7 +32,7 @@ body {
 
 .title {
     font-size: 2em;
-    color: red;
+    color: #db191f;
     margin-bottom: 10px;
     font-weight: bold;
     text-transform: uppercase;
@@ -64,36 +64,26 @@ body {
     margin-top: 20px;
 }
 
-.slideButton {
-    background-color: #dc2626;
+.contactButton {
+    background-color: #001d52;
     color: white;
     padding: 12px 24px;
-    border: none;
+    border: none;  
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s ease;
     font-size: 1rem;
     text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
 }
 
-.blink-once {
-    animation: blink 0.5s;
-}
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
-
-.slideButton:hover {
-    background-color: #001d52;
+.contactButton:hover {
+    background-color: #db191f;
     transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Enhances shadow on hover */
 }
+
 
 /* Carousel Image */
 .carouselImage {

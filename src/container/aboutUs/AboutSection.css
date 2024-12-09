@@ -55,7 +55,7 @@
 }
 
 .about-us {
-    color: #dc2626;
+    color: #db191f;
     font-weight: 600;
     font-size: xx-large;
     text-transform: uppercase;
@@ -92,7 +92,7 @@
 }
 
 .learn-more-button {
-    background-color: #dc2626;
+    background-color: #db191f;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -102,6 +102,8 @@
     transition: background-color 0.3s ease, transform 0.2s;
     font-size: 1rem;
     text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
 }
 
 .blink-once {
@@ -118,8 +120,10 @@
 }
 
 .learn-more-button:hover {
-    background-color: hsl(0, 74%, 42%);
+    background-color: #001d52;
     transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 /* Tablet and Larger Screens */

@@ -13,9 +13,8 @@ const Slider = () => (
                     <div className={styles.description}>
                         {slide.description}
                     </div>
-                    <div className={styles.buttonContainer}>
-                        <button className={styles.slideButton}>
-                            {slide.buttonText}
+                    <div className={styles.actionContainer}>
+                        <button className={styles.Button}>{slide.buttonText}
                         </button>
                     </div>
                 </div>

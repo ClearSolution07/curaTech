@@ -19,8 +19,8 @@ const About = () => (
                 pellentesque
     
             </div>
-            <div className={styles.buttonContainer}>
-                <button className={styles.slideButton}>Know More</button>
+            <div className={styles.actionContainer}>
+                <button className={styles.contactButton}>Submit Form</button>
             </div>
         </div>
 

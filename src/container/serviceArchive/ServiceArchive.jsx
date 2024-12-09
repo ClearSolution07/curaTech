@@ -84,9 +84,11 @@ function ServiceArchive() {
                             <p className={styles.description}>
                                 {item.description}
                             </p>
-                            <button className={styles.button}>
-                                Learn More
-                            </button>
+                            <div className={styles.buttonContainer}>
+                                    <button className={styles.slideButton}>
+                                        Know More
+                                    </button>
+                                </div>
                         </div>
                     </div>
                 ))}
