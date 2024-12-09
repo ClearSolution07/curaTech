@@ -76,6 +76,30 @@ const Navbar = () => {
                 borderBottom: "1px solid #e8e8e8",
             }}
         >
+            {/* Inline Styles */}
+            <style>
+                {`
+                /* Base styles for menu items */
+                .navbar-menu .ant-menu-item,
+                .navbar-menu .ant-menu-submenu-title {
+                    color: #001d52 !important; /* Ensure the default color */
+                    font-weight: bold;
+                    transition: color 0.3s ease, transform 0.3s ease;
+                }
+
+                /* Hover styles */
+                .navbar-menu .ant-menu-item:hover,
+                .navbar-menu .ant-menu-submenu-title:hover,
+                .navbar-menu .ant-menu-item a:hover {
+                    color: #ba1c1c !important; /* Ensure hover color applies */
+                }
+
+                /* Link hover fix */
+                .navbar-menu .ant-menu-item a {
+                    color: inherit; /* Inherit color from parent for consistency */
+                }
+                `}
+            </style>
             <Row justify="space-between" align="middle">
                 <Col xs={12} md={6}>
                     <img
@@ -92,10 +116,14 @@ const Navbar = () => {
                             justifyContent: "right",
                             marginRight: "-16px",
                         }}
+                        className="navbar-menu"
                     >
                         {menuItems.map((item) =>
                             item.children ? (
-                                <Menu.SubMenu key={item.key} title={item.label}>
+                                <Menu.SubMenu
+                                    key={item.key}
+                                    title={item.label}
+                                >
                                     {item.children.map((child) => (
                                         <Menu.Item key={child.key}>
                                             {child.label}
