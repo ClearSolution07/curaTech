@@ -22,22 +22,23 @@ html, body {
   
   
   .heading {
-    width: 50%;
-    font-size: 35px;
+    width: 70%;
+    font-size: 40px;
     color: #fff;
     margin: 0 auto 20px;
+    font-weight: bolder;
     line-height: 1.6;
     display: flex !important;
     text-align: center;
     font-family: 'Josh', sans-serif;
     text-transform: uppercase;
     text-shadow: 
-        3px 3px 6px #000000cc, /* Deep black shadow for depth */
-        3px 3px 10px #ffffff80; /* Blue glow for the effect */
-}
+        3px 3px 6px #000000cc, 
+        3px 3px 10px #2c2c2c80; 
+  }
 
 .description {
-    width: 50%;
+    width: 70%;
     font-size: 16px;
     color: #fff;
     margin: 0 auto 20px;
@@ -46,8 +47,8 @@ html, body {
     text-align: justify;
     font-family: 'Poppins', sans-serif;
     text-shadow: 
-        5px 5px 15px #000000e6, /* Deep black shadow for depth */
-        3px 3px 8px #ffffff80; /* Blue glow for the effect */
+        5px 5px 15px #000000e6, 
+        3px 3px 8px #2c2c2c80; 
 }
 
 

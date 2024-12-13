@@ -31,6 +31,7 @@
 .leftDescription {
     font-size: 1.2rem;
     line-height: 1.5;
+
 }
 
 .rightCard {
@@ -91,10 +92,10 @@
 }
 
 .image {
-    height: 600px; /* Fixed height */
-    width: 462px; /* Fixed width */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    display: block; /* Prevents extra spacing issues */
+    height: 600px; 
+    width: 462px;
+    object-fit: cover; 
+    display: block;
 }
 
 
@@ -128,7 +129,7 @@
 }
 
 .description {
-    font-weight: bold;
+    font-weight:lighter;
     font-size: 24px;
     line-height: 1.5;
 }
