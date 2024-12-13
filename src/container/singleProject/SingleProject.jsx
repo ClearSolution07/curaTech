@@ -1,6 +1,6 @@
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/slide.jpg";
-import phone from "../../assets/8jb.jpg";
+import phone from "../../assets/L12.jpg";
 import image from "../../assets/7jb.jpg";
 import Project from "./Projects"
 
@@ -63,41 +63,10 @@ return (
                                 lineHeight: "1.5",
                             }}
                         >
-                            Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of
-                            classical Latin literature from 45 BC, making it
-                            over 2000 years old. Richard McClintock, a Latin
-                            professor at Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words,
-                            consectetur, from a Lorem Ipsum passage, and going
-                            through the cites of the word in classical
-                            literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of de
-                            Finibus Bonorum et Malorum (The Extremes of Good and
-                            Evil) by Cicero, written in 45 BC. This book is a
-                            treatise on the theory of ethics,
+                                                Cura Tech transformed a traditional office space into a modern, open-plan workplace for a leading tech company. Our team handled the architectural design, providing a sleek and functional layout that encourages collaboration and creativity. We also integrated interior design elements, selecting contemporary furniture, lighting, and color schemes that foster productivity. Additionally, our structural design team ensured that the building's framework supported the new open-concept design, while maintaining safety standards. We guided the client through the regulatory compliance process, ensuring all building codes, safety standards, and environmental regulations were met.
+
                         </p>
-                        <p
-                            style={{
-                                textAlign: "justify",
-                                fontSize: "1.2rem",
-                                lineHeight: "1.5",
-                            }}
-                        >
-                            Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of
-                            classical Latin literature from 45 BC, making it
-                            over 2000 years old. Richard McClintock, a Latin
-                            professor at Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words,
-                            consectetur, from a Lorem Ipsum passage, and going
-                            through the cites of the word in classical
-                            literature, discovered the undoubtable source. Lorem
-                            Ipsum comes from sections 1.10.32 and 1.10.33 of de
-                            Finibus Bonorum et Malorum (The Extremes of Good and
-                            Evil) by Cicero, written in 45 BC. This book is a
-                            treatise on the theory of ethics,
-                        </p>
+
                     </div>
                     <div
                         style={{
@@ -147,17 +116,11 @@ return (
                     }}
                 >
                     <h2 style={{ fontSize: "2rem", fontWeight: "bold" }}>
-                        Project Title
+                    Modern Office Space for Tech Firm
                     </h2>
 
                     <p style={{ fontSize: "1.2rem", lineHeight: "1.5" }}>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the industrys
-                        standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it
-                        to make a type specimen book. It has survived not only
-                        five centuries, but also the leap into electronic
-                        typesetting, remaining essentially unchanged.
+                    Cura Tech transformed a traditional office into a modern, collaborative workspace with innovative design, structural enhancements, and full regulatory compliance.
                     </p>
                     <div
                         style={{

@@ -23,28 +23,34 @@ html, body {
   
   .heading {
     width: 50%;
-    font-size: 35px; /* Increased font size for better prominence */
+    font-size: 35px;
     color: #fff;
     margin: 0 auto 20px;
     line-height: 1.6;
     display: flex !important;
-    text-align: center; /* Center-align for better heading appearance */
-    font-family: 'Josh', sans-serif; /* Updated font */
-    text-transform: uppercase; /* Makes the text all uppercase */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for emphasis */
+    text-align: center;
+    font-family: 'Josh', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 
+        3px 3px 6px #000000cc, /* Deep black shadow for depth */
+        3px 3px 10px #ffffff80; /* Blue glow for the effect */
 }
 
 .description {
     width: 50%;
-    font-size: 16px; /* Font size for paragraph text */
+    font-size: 16px;
     color: #fff;
     margin: 0 auto 20px;
-    line-height: 1.8; /* Increased line-height for better readability */
+    line-height: 1.8;
     display: flex !important;
     text-align: justify;
-    font-family: 'Poppins', sans-serif; /* Updated font */
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9); /* Enhanced shadow for depth */
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 
+        5px 5px 15px #000000e6, /* Deep black shadow for depth */
+        3px 3px 8px #ffffff80; /* Blue glow for the effect */
 }
+
+
 
 
   

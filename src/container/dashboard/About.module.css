@@ -45,10 +45,11 @@ body {
 }
 
 .subheading {
-    font-size: 18px;
+    font-size: 21px;
     color: black;
     margin-bottom: 20px;
     text-align: justify;
+    font-weight: bold;
 }
 
 .description {

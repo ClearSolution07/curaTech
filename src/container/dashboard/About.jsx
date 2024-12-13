@@ -6,21 +6,18 @@ const About = () => (
     <div className={styles.sliderContainer}>
         <div className={styles.carouselSlide}>
             <div className={styles.title}>About Us</div>
-            <div className={styles.heading}>Slider Container</div>
             <div className={styles.subheading}>
                 {" "}
-                Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat
-                congue
+                "Our experienced team of architects, engineers, and consultants delivers every project with precision and care."
             </div>
             <div className={styles.description}>
-                Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus
-                rutrum leo consectetur accumsan. Vivamus viverra ante turpis,
-                dignissim condimentum elit egestas sit amet. Phasellus faucibus
-                pellentesque
-    
+            Vision: To be a globally recognized leader in civil and mechanical engineering, delivering sustainable, innovative, and client-focused solutions in turnkey projects, architectural design, pipeline installations, and fire safety systems.    
+            </div>
+            <div className={styles.description}>
+            Mission: To provide innovative and reliable civil and mechanical engineering solutions, specializing in turnkey projects, architectural and structural design, and firefighting solutions.
             </div>
             <div className={styles.actionContainer}>
-                <button className={styles.contactButton}>Submit Form</button>
+                <button className={styles.contactButton}>Learn More</button>
             </div>
         </div>
 

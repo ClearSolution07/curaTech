@@ -29,7 +29,7 @@ const Navbar = () => {
             key: "services",
             children: [
                 {
-                    label: <Link to="/single-service">Single Service</Link>,
+                    label: <Link to="/single-service">Our Service</Link>,
                     key: "singleService",
                 },
                 {
@@ -60,7 +60,7 @@ const Navbar = () => {
             ],
         },
         { label: <Link to="/about-us">About Us</Link>, key: "aboutUs" },
-        { label: <Link to="/contact">Contacts</Link>, key: "contacts" },
+        { label: <Link to="/contact">Contact Us</Link>, key: "contacts" },
     ];
 
     return (

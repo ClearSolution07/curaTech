@@ -9,8 +9,8 @@
 .contantContainer {
     display: flex;
     gap: 80px;
-    margin: 50px;
-    width: 60%;
+    margin: 90px;
+    width: 95%;
     align-items: center;
     justify-content: center;
 }
@@ -91,9 +91,13 @@
 }
 
 .image {
-    height: 590px;
-    width: 362px;
+    height: 600px; /* Fixed height */
+    width: 462px; /* Fixed width */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block; /* Prevents extra spacing issues */
 }
+
+
 
 /* four cards */
 /* Cards.module.css */

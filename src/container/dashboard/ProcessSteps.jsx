@@ -14,23 +14,23 @@ const ProcessSteps = () => {
             showContent: false,
         },
         {
-            title: "Research & Analysis",
+            title: "Civil Engineering Services",
             description:
-                "Nullam tincidunt libero eu augue eleifend, vitae condimentum lacus.",
+                "Cura Tech provides comprehensive civil engineering solutions with quality and affordability.",
             background: "blue",
             image: service1,
         },
         {
-            title: "Industry Development",
+            title: "Mechanical Engineering Services",
             description:
-                "Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat.",
+                "Cura Tech offers mechanical engineering solutions, specializing in piping, firefighting and equipment erection",
             background: "red",
             image: service2,
         },
         {
-            title: "Production Launch",
+            title: "Consulting and Compliance",
             description:
-                "Nullam tincidunt libero eu augue eleifend, vitae condimentum lacus.",
+                "Consultancy in legal procedures, project compliance, and regulatory approvals assistance",
             background: "blue",
             image: service1,
         },

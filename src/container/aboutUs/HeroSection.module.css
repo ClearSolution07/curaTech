@@ -126,7 +126,8 @@
    .slideButton:hover {
    background-color: #001d52;
    transform: translateY(-2px);
-   box-shadow: 0 6px 8px rgba(134, 114, 114, 0.4);
+   
+   box-shadow: 0 6px 8px rgba(112, 92, 92, 0.4);
    }
 @media (max-width: 768px) {
     .title {

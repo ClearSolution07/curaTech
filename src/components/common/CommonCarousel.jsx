@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import styles from "./CommonSlider.module.css";
 import FloatingContact from "./FloatingContact";
+import Bi from "../../assets/L3.jpg"
 
 const CommonCarousel = ({
     heading,
@@ -14,7 +15,7 @@ const CommonCarousel = ({
         <div
             className={styles.sliderContainer}
             style={{
-                backgroundImage: `url(${backgroundImage})`,
+                backgroundImage: `url(${Bi})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 alignItems: "center",

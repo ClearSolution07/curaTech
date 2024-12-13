@@ -1,7 +1,7 @@
 import styles from "./Projects.module.css";
-import office2 from "../../assets/office2.png";
-import office3 from "../../assets/office3.png";
-import office4 from "../../assets/office4.png";
+import office2 from "../../assets/L1.jpg";
+import office3 from "../../assets/L3.jpg";
+import office4 from "../../assets/L4.jpg";
 
 
 

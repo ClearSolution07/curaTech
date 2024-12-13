@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 75%;
     color: #fff;
     background-color: #d2153d;
     max-height: 420px;
@@ -19,7 +19,7 @@
 }
 
 .descriptionContainer {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -36,6 +36,8 @@
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 16px;
+    text-align: justify;
+
 }
 
 .buttonContainer {

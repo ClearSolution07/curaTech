@@ -56,7 +56,7 @@ const FooterComponent = () => {
                                         color: "#fff",
                                     }}
                                 >
-                                    +1634 7638 654
+                                    +91 7002394679
                                 </Text>
                             </Row>
                         </Col>
@@ -123,9 +123,7 @@ const FooterComponent = () => {
                                     color: "#fff",
                                 }}
                             >
-                                Fusce eu magna quis velit efficitur rhoncus.{" "}
-                                <br />
-                                Vivamus vehicula, neque a velit.
+                                Complete engineering solutions under one roof.{" "}
                             </Text>
                         </Row>
                     </Row>
