@@ -20,7 +20,7 @@ body {
     align-items: center;
     height: 80vh;
     text-align: center;
-    background: url("src/assets/L6.jpg") no-repeat center center;
+    background: url("../../../src/assets/L6.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
 }

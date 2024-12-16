@@ -8,7 +8,7 @@ import ServiceArchive from "./container/serviceArchive/ServiceArchive";
 import AboutUs from "./container/aboutUs/AboutUs";
 import Portfolio from "./container/portfolio/Portfolio";
 import AppLayout from "./routConfig/AppLayout";
-import Loader from "./components/Loader/Loader";
+import Loader from './components/Loader/progress';
 import "./app.css";
 
 function App() {

@@ -8,8 +8,7 @@ html, body {
   
   #root {
   }
-  
-  
+
   .sliderContainer {
       width: 100%;
       height: 40vh;
@@ -19,7 +18,6 @@ html, body {
       display: flex;
       justify-content: center;
   }
-  
   
   .heading {
     width: 70%;
@@ -50,10 +48,6 @@ html, body {
         5px 5px 15px #000000e6, 
         3px 3px 8px #2c2c2c80; 
 }
-
-
-
-
   
   .buttonContainer {
       width: 50%;
