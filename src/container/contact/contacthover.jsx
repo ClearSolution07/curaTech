@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube, FaInstagram, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube, FaInstagram} from 'react-icons/fa';
 import './contacthover.css';
 
 const SocialContact = () => {
@@ -34,16 +34,6 @@ const SocialContact = () => {
       href: 'https://instagram.com/yourprofile',
       label: 'Instagram'
     },
-    {
-      icon: <FaPhone />,
-      href: 'tel:+91 7002394679',
-      label: 'Call Us'
-    },
-    {
-      icon: <FaEnvelope />,
-      href: 'mailto:curatechengineering@gmail.com',
-      label: 'Email Us'
-    }
   ];
 
   const handleMouseDown = (e) => {

@@ -11,7 +11,7 @@ function SingleProject() {
 return (
     <>
         <CommonCarousel
-            heading="Single Projects"
+            heading="Ongoing Projects"
             description="Explore opportunities and possibilities."
             backgroundImage={slideImage}
             showFloatingContact={false}

@@ -31,13 +31,14 @@ function SingleService() {
     return (
         <>
             <CommonCarousel
-                heading="Our Service"
+                heading="Our Services"
                 description="Explore opportunities and possibilities."
                 backgroundImage={slideImage}
-                showFloatingContact={false}
+                showFloatingContact={true} // Set to true to show the floating contact
                 floatingContactProps={{
-                    title: "We Construct and Manage Places and Infrastructures",
-                    description: "We offer the best solutions for your needs.",
+                    title: "Call us now!",
+                    description: "Click the call Icon",
+                    phoneNumber: "+91 7002394679",
                 }}
             />
 
@@ -74,7 +75,7 @@ function SingleService() {
                     <p className={styles.description}>
                         Cura Tech is a leader in mechanical engineering, delivering specialized solutions
                         for industrial needs. We offer firefighting systems for residential and commercial
-                        properties, equipment erection services, and industrial piping work to ensure operational efficiency.       
+                        properties, equipment erection services, and industrial piping work to ensure operational efficiency.
 
                     </p>
                     <div className={styles.offerSection}>
