@@ -35,7 +35,7 @@ function SingleService() {
     return (
         <>
             <CommonCarousel
-                heading="Single Service"
+                heading="Our Service"
                 description="Explore opportunities and possibilities."
                 backgroundImage={slideImage}
                 showFloatingContact={false}

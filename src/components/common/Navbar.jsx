@@ -41,7 +41,7 @@ const Navbar = () => {
         {
             label: (
                 <span>
-                    Pages{" "}
+                    Projects{" "}
                     <DownOutlined
                         style={{ fontSize: "10px", marginLeft: "5px" }}
                     />
@@ -114,7 +114,8 @@ const Navbar = () => {
                         style={{
                             borderBottom: "none",
                             justifyContent: "right",
-                            marginRight: "-16px",
+                            marginRight: "-90px",
+                            fontSize: "17px",
                         }}
                         className="navbar-menu"
                     >

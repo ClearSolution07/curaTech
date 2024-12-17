@@ -1,5 +1,5 @@
 import React from "react";
-import "./Loader.css";
+import "./loader.css";
 import loaderImage from "/src/assets/Cura Tech Enginnering WithoutB.png";
 
 const Loader = () => {

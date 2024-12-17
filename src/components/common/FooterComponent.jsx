@@ -269,8 +269,7 @@ const FooterComponent = () => {
                         </Col>
                         <Row style={{ marginTop: "24px" }}>
                             <Text style={{ color: "#fff", fontSize: "14px" }}>
-                                Merkulove © Dustro Template All rights reserved
-                                Copyrights 2020
+                            © 2021 CURA TECH ENGINEERING. All rights reserved.
                             </Text>
                         </Row>
                     </Row>
