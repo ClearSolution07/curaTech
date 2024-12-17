@@ -40,12 +40,6 @@ function ServiceArchive() {
                 heading="Service Archive"
                 description="Explore opportunities and possibilities."
                 backgroundImage={slideImage}
-                showFloatingContact={true}
-                containerStyle={{}}
-                floatingContactProps={{
-                    title: "Call Us Today",
-                    description: "+91 7002394679",
-                }}
             />
             <div
                 style={{

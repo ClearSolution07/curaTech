@@ -12,14 +12,6 @@ return (
             heading="Portfolio Archive"
             description="Home / Portfolio Archive"
             backgroundImage={slideImage}
-            showFloatingContact={true}
-            containerStyle={{}}
-            floatingContactProps={{
-                title: "Call Us Today",
-                description: "+91 7002394679",
-                
-            }}
-          
         />
         <ImageGallery/>
     </>
