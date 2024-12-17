@@ -9,6 +9,8 @@ import AboutUs from "./container/aboutUs/AboutUs";
 import Portfolio from "./container/portfolio/Portfolio";
 import AppLayout from "./routConfig/AppLayout";
 import Loader from './components/Loader/progress';
+import SocialContact from './container/contact/contacthover';
+
 import "./app.css";
 
 function App() {
@@ -43,6 +45,7 @@ function App() {
                     <Route path="/portfolio" element={<Portfolio />} />
                 </Route>
             </Routes>
+            <SocialContact />
         </>
     );
 }
