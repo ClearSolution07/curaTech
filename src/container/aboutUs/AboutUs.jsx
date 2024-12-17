@@ -11,7 +11,6 @@ return (
             heading="About Us"
             description="Home / About Us"
             backgroundImage={slideImage}
-
         />
         <AboutSection/>
         <HeroSection/>

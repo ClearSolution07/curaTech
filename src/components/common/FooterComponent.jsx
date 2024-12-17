@@ -1,10 +1,4 @@
 import { Row, Col, Typography, Space } from "antd";
-import {
-    FacebookOutlined,
-    TwitterOutlined,
-    LinkedinOutlined,
-    YoutubeOutlined,
-} from "@ant-design/icons";
 import logoImage from "../../assets/Cura Tech Enginnering WithoutB.png";
 
 const { Title, Text, Link } = Typography;
@@ -13,6 +7,7 @@ const FooterComponent = () => {
     return (
         <div style={{ color: "#fff" }}>
             <Row>
+                {/* Left Section with Logo */}
                 <Col
                     xs={24}
                     md={6}
@@ -35,90 +30,14 @@ const FooterComponent = () => {
                             <img
                                 src={logoImage}
                                 alt="Dustro Logo"
-                                style={{ width: "120px", height: "auto" }}
+                                style={{ width: "300px", height: "auto" }}
                             />
-                        </Row>
-
-                        <Col>
-                            <Row>
-                                <Text
-                                    strong
-                                    style={{ color: "#fff", fontSize: "12px" }}
-                                >
-                                    CALL US TODAY
-                                </Text>
-                            </Row>
-                            <Row>
-                                <Text
-                                    style={{
-                                        fontSize: "24px",
-                                        fontWeight: "bold",
-                                        color: "#fff",
-                                    }}
-                                >
-                                    +91 7002394679
-                                </Text>
-                            </Row>
-                        </Col>
-                        <Row
-                            style={{ marginTop: "16px", marginBottom: "20px" }}
-                        >
-                            <Space size="middle">
-                                <a
-                                    href="#"
-                                    style={{
-                                        backgroundColor: "#fff",
-                                        borderRadius: "50%",
-                                        padding: "6px",
-                                        fontSize: "20px",
-                                        color: "#00215b",
-                                    }}
-                                >
-                                    <TwitterOutlined />
-                                </a>
-                                <a
-                                    href="#"
-                                    style={{
-                                        backgroundColor: "#fff",
-                                        borderRadius: "50%",
-                                        padding: "6px",
-                                        fontSize: "20px",
-                                        color: "#00215b",
-                                    }}
-                                >
-                                    <FacebookOutlined />
-                                </a>
-                                <a
-                                    href="#"
-                                    style={{
-                                        backgroundColor: "#fff",
-                                        borderRadius: "50%",
-                                        padding: "6px",
-                                        fontSize: "20px",
-                                        color: "#00215b",
-                                    }}
-                                >
-                                    <LinkedinOutlined />
-                                </a>
-                                <a
-                                    href="#"
-                                    style={{
-                                        backgroundColor: "#fff",
-                                        borderRadius: "50%",
-                                        padding: "6px",
-                                        fontSize: "20px",
-                                        color: "#00215b",
-                                    }}
-                                >
-                                    <YoutubeOutlined />
-                                </a>
-                            </Space>
                         </Row>
                         <Row>
                             <Text
                                 style={{
                                     display: "block",
-                                    marginTop: "16px",
+                                    marginTop: "-60px",
                                     fontSize: "14px",
                                     color: "#fff",
                                 }}
@@ -129,6 +48,7 @@ const FooterComponent = () => {
                     </Row>
                 </Col>
 
+                {/* Right Section */}
                 <Col
                     xs={24}
                     md={18}
@@ -269,7 +189,7 @@ const FooterComponent = () => {
                         </Col>
                         <Row style={{ marginTop: "24px" }}>
                             <Text style={{ color: "#fff", fontSize: "14px" }}>
-                            © 2021 CURA TECH ENGINEERING. All rights reserved.
+                                © 2021 CURA TECH ENGINEERING. All rights reserved.
                             </Text>
                         </Row>
                     </Row>
@@ -277,7 +197,6 @@ const FooterComponent = () => {
             </Row>
         </div>
     );
-
 };
 
 export default FooterComponent;
