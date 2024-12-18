@@ -129,30 +129,75 @@
     background-color: #d2153d;
     transform: translateY(-2px);
 }
+/* Mobile View Adjustments */
+@media (max-width: 767px) {
+    .serviceSection {
+        flex-direction: column;
+        gap: 15px;
+        width: 95%;
+        margin: 20px auto;
+    }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .card {
-        width: 100%; /* Cards take full width on smaller screens */
-        padding: 15px;
+    .column {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .imageContainer {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .image {
+        width: 100%;
+        max-height: 180px;
+        object-fit: contain;
+        border-radius: 6px;
+    }
+
+    .projectSection {
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    .projectTitle {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
     }
 
     .cardContainer {
-        gap: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .projectTitle {
-        font-size: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
-    .card .description {
-        font-size: 0.9rem;
+    .card {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .company {
+        font-size: 1rem;
+    }
+
+    .buttonContainer {
+        text-align: center;
     }
 
     .slideButton {
         padding: 8px 12px;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        border-radius: 4px;
     }
 }

@@ -1,3 +1,4 @@
+/* Desktop View */
 .social-contact {
   display: flex;
   flex-direction: column;
@@ -14,7 +15,7 @@
     inset -2px 0 8px rgba(255, 255, 255, 0.1);
   z-index: 1000;
   user-select: none;
-  cursor: grab;
+  cursor: pointer;
   position: relative; /* Ensure proper positioning for labels */
 }
 
@@ -91,4 +92,51 @@
 
 .social-contact-left .social-icon:hover {
   transform: translateX(5px);
+}
+
+/* Draggable functionality for desktop and mobile */
+@media (max-width: 1024px) {
+  .social-contact {
+    cursor: pointer; /* Enables dragging and interaction */
+    touch-action: pan-y; /* Enables vertical panning for dragging */
+  }
+
+  .social-contact.active .icon-label {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .social-contact.active .social-icon {
+    transform: translateX(0);
+  }
+
+  .social-contact.active .social-contact-right {
+    right: -10px; /* Adjusts for fully visible contact */
+  }
+
+  .social-contact.active .social-contact-left {
+    left: -10px; /* Adjusts for fully visible contact */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .social-contact {
+    width: 50px; /* Slightly reduced width for mobile */
+    padding: 8px;
+  }
+
+  .social-icon {
+    font-size: 1.25rem; /* Smaller hover icon on mobile */
+    width: 35px; /* Adjusted size for smaller mobile screens */
+  }
+
+  .icon-label {
+    font-size: 0.75rem; /* Smaller label font size for mobile */
+  }
+
+  .social-contact.active .icon-label {
+    opacity: 1;
+    visibility: visible;
+  }
 }

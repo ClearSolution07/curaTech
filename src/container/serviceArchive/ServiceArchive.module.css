@@ -102,29 +102,32 @@
 /* Responsiveness for mobile devices */
 @media (max-width: 480px) {
     .container {
-        width: 100%; /* Use full width for mobile */
+        width: 95%; /* Slightly reduce container width */
+        padding: 16px; /* Add internal padding for small devices */
     }
 
     .image {
-        height: 150px; /* Further reduce height */
+        width: 100%; /* Full width for smaller devices */
+        height: auto; /* Maintain proportional scaling */
+        object-fit: cover; /* Keep image well-fitted */
     }
 
-
     .descriptionContainer {
-        padding: 16px; /* Further reduce padding */
+        width: 100%; /* Use the full width of the screen */
+        padding: 16px; /* Reduce padding further */
     }
 
     .heading {
-        font-size: 1.25rem; /* Further reduce font size */
+        font-size: 1.2rem; /* Smaller headings for mobile */
     }
 
     .description {
-        font-size: 0.85rem; /* Adjust text size */
-        margin-bottom: 12px; /* Reduce spacing */
+        font-size: 0.8rem; /* Adjust font size for readability */
+        line-height: 1.5; /* Maintain readability */
     }
 
-    .button {
-        padding: 10px 24px; /* Smaller buttons */
-        font-size: 0.6rem; /* Smaller font size */
+    .slideButton {
+        padding: 10px 20px; /* Compact padding for buttons */
+        font-size: 0.85rem; /* Adjust button text size */
     }
 }
