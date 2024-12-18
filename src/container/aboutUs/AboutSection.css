@@ -139,28 +139,6 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Tablet and Larger Screens */
-@media (min-width: 768px) {
-    .container {
-        flex-wrap: nowrap;
-    }
-    
-    .title {
-        font-size: 2.5rem;
-    }
-    
-    .description {
-        font-size: 1.125rem;
-    }
-    
-    .author-name {
-        font-size: 1.5rem;
-    }
-    
-    .learn-more-button {
-        font-size: 1.125rem;
-    }
-}
 
 /* Mobile Screens */
 @media (max-width: 767px) {
@@ -168,33 +146,32 @@
         flex-direction: column;
         align-items: center;
     }
-    
-    .image-column,
     .content-column {
+        text-align: center;
+        order: 1; /* Push content column after image */
+    }
+    .image-column {
         flex: 1;
         max-width: 100%;
-        order: 0;
+        order: 0; /* Bring image column to the top */
+        margin-bottom: 20px; /* Add some space between image and content */
     }
-    
     .title {
         font-size: 1.75rem;
         text-align: center;
+        margin-bottom: 15px; /* Add space below title */
     }
-    
     .description {
         font-size: 0.875rem;
         text-align: justify;
     }
-    
     .author-name,
     .author-title {
         text-align: center;
     }
-    
     .learn-more-button {
         font-size: 0.875rem;
     }
-    
     .experience-overlay {
         bottom: 8px;
         left: 50%;
