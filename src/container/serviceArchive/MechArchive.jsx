@@ -9,28 +9,35 @@ import image4 from "../../assets/L8.jpg";
 function MechArchive() {
     const contentList = [
         {
-            heading: "Architectural and Structural Design",
-            description: `Cura Tech offers innovative and practical architectural and structural design services. Our team of experts works closely with clients to create designs that are both aesthetically appealing and structurally sound. We combine creativity with engineering precision to ensure that each design reflects the client’s vision while adhering to safety and regulatory standards. Whether it's residential, commercial, or institutional, we bring your concepts to life with sustainable and functional designs.`,
+            heading: "Firefighting Systems",
+            description: `Cura Tech specializes in designing and installing effective firefighting systems for both residential and commercial properties. We provide fire risk assessments, suppression systems, and fire alarm systems, ensuring that your property complies with safety standards. Our systems are tailored to meet the specific needs of each building, offering peace of mind and protection against potential fire hazards.
+`,
             image: image1,
             imagePosition: "left",
         },
         {
-            heading: "Residential & Commercial Construction",
-            description: `Cura Tech provides complete construction services for both residential and commercial projects. We manage every aspect of the construction process, from site preparation to final touches. Our team ensures timely and cost-effective delivery while maintaining the highest quality standards. Whether you’re building a new home, office, or retail space, our experience and expertise guarantee that your project will be built to last.`,
+            heading: "Industrial Piping",
+            description: `Our industrial piping services include the design, installation, and maintenance of pipelines for water, gas, and oil systems. We work with a wide range of industries, ensuring that all piping systems are efficient, safe, and compliant with relevant standards. Whether it's for new installations or retrofitting existing systems, our team ensures that your piping infrastructure is robust and reliable.`,
             image: image2,
             imagePosition: "right",
         },
         {
-            heading: "Interior Design",
-            description: `Our interior design services focus on transforming spaces to be both functional and aesthetically pleasing. We offer customized solutions for residential, commercial, and industrial interiors, ensuring that each space maximizes its potential. From selecting the right furniture and lighting to designing layouts that enhance comfort and flow, we create interiors that align with your personal or business style while optimizing space utilization.`,
+            heading: "Equipment Erection",
+            description: `Cura Tech provides precise and reliable equipment erection services for industrial and commercial clients. We handle the installation of various machinery and systems, ensuring that each piece of equipment is positioned, assembled, and tested according to specifications. Our experienced team ensures smooth integration with existing systems, helping businesses maintain operational efficiency.`,
             image: image3,
             imagePosition: "left",
         },
         {
-            heading: "Turnkey Solutions",
-            description: "At Cura Tech, we provide comprehensive turnkey solutions for a hassle-free project experience. From initial design to project completion, we take care of all aspects, ensuring seamless integration and coordination. Our turnkey services are ideal for clients who want a one-stop solution, with full accountability and no need to manage multiple contractors. We handle everything from permits to final handover, delivering a complete, ready-to-use product.",
+            heading: "Structural Work",
+            description: "Our structural engineering services focus on providing strong, durable frameworks for buildings and industrial projects. We design and implement structural solutions that ensure stability, safety, and longevity. Whether it’s for a new construction project or retrofitting an existing structure, our team uses the latest technology and materials to create solid foundations and frameworks that meet industry standards.",
             image: image4,
             imagePosition: "right",
+        },
+        {
+            heading: "⁠Project Consultancy & Compliance",
+            description: "Cura Tech offers expert consultancy in navigating legal and regulatory procedures for your project. From obtaining building permits to ensuring compliance with safety and environmental regulations, our team helps you stay on track. We assist with risk assessments, safety audits, and environmental impact studies, ensuring that your project meets all legal requirements and adheres to industry standards.",
+            image: image4,
+            imagePosition: "left",
         },
     ];
 

@@ -32,6 +32,12 @@ function CivilArchive() {
             image: image4,
             imagePosition: "right",
         },
+        {
+                    heading: "⁠Project Consultancy & Compliance",
+                    description: "Cura Tech offers expert consultancy in navigating legal and regulatory procedures for your project. From obtaining building permits to ensuring compliance with safety and environmental regulations, our team helps you stay on track. We assist with risk assessments, safety audits, and environmental impact studies, ensuring that your project meets all legal requirements and adheres to industry standards.",
+                    image: image4,
+                    imagePosition: "left",
+                },
     ];
 
     return (
