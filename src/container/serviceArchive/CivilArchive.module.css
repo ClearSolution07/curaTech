@@ -7,10 +7,8 @@
     background-color: #d2153d;
     max-height: 420px;
     overflow: hidden;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
 }
-
-
 
 .image {
     width: 50%;
@@ -37,97 +35,129 @@
     line-height: 1.5;
     margin-bottom: 16px;
     text-align: justify;
-
 }
 
 .buttonContainer {
     margin-top: 20px;
-    }
-   
-.slideButton {
-   background-color: #001d52;
-   color: white;
-   padding: 12px 24px;
-   border: none;  
-   border-radius: 4px;
-   font-weight: 600;
-   cursor: pointer;
-   transition: background-color 0.3s ease, transform 0.2s;
-   font-size: 1rem;
-   text-transform: uppercase;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    }
-   
-.blink-once {
-   animation: blink 0.5s;
-   }
-   .slideButton:hover {
-   background-color: #001d52;
-   transform: translateY(-2px);
-   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-   }
+}
 
-/* Responsiveness for tablets */
+.slideButton {
+    background-color: #001d52;
+    color: white;
+    padding: 12px 24px;
+    border: none;  
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.blink-once {
+    animation: blink 0.5s;
+}
+
+.slideButton:hover {
+    background-color: #001d52;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack image and description */
-        width: 90%; /* Adjust width */
-        max-height: none; /* Allow dynamic height */
+        flex-direction: column;
+        width: 90%;
+        max-height: none;
     }
 
     .image {
-        width: 100%; /* Make the image take full width */
-        height: 200px; /* Adjust height for smaller screens */
+        width: 100%;
+        height: auto;
     }
 
     .descriptionContainer {
         width: 100%;
-        padding: 24px; /* Reduce padding */
+        padding: 24px;
     }
 
     .heading {
-        font-size: 1.5rem; /* Reduce font size */
+        font-size: 1.5rem;
     }
 
     .description {
-        font-size: 0.9rem; /* Reduce font size */
+        font-size: 0.9rem;
     }
 
-    .button {
-        padding: 12px 32px; /* Adjust padding */
+    .slideButton {
+        padding: 12px 32px;
         font-size: 0.65rem;
     }
 }
 
-/* Responsiveness for mobile devices */
 @media (max-width: 480px) {
     .container {
-        width: 95%; /* Slightly reduce container width */
-        padding: 16px; /* Add internal padding for small devices */
+        width: 95%;
+        padding: 16px;
     }
 
     .image {
-        width: 100%; /* Full width for smaller devices */
-        height: auto; /* Maintain proportional scaling */
-        object-fit: cover; /* Keep image well-fitted */
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .descriptionContainer {
-        width: 100%; /* Use the full width of the screen */
-        padding: 16px; /* Reduce padding further */
+        width: 100%;
+        padding: 16px;
     }
 
     .heading {
-        font-size: 1.2rem; /* Smaller headings for mobile */
+        font-size: 1.2rem;
     }
 
     .description {
-        font-size: 0.8rem; /* Adjust font size for readability */
-        line-height: 1.5; /* Maintain readability */
+        font-size: 0.8rem;
+        line-height: 1.5;
     }
 
     .slideButton {
-        padding: 10px 20px; /* Compact padding for buttons */
-        font-size: 0.85rem; /* Adjust button text size */
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* Responsiveness for mobile devices */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 16px;
+    }
+
+    .image {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .descriptionContainer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.8rem; 
+        line-height: 1.5;
+    }
+
+    .slideButton {
+        padding: 10px 20px; 
+        font-size: 0.85rem; 
     }
 }
