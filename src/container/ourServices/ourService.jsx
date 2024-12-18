@@ -1,10 +1,19 @@
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/L8.jpg";
-import styles from "./SingleService.module.css";
+import styles from "./OurService.module.css";
 import phone from "../../assets/L9.jpg";
 import image from "../../assets/L10.jpg";
 
-function SingleService() {
+function OurService() {
+    const navigate = useNavigate();
+
+    const handleNavigation = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+    };
+
     const cardData = [
         {
             id: 1,
@@ -34,7 +43,7 @@ function SingleService() {
                 heading="Our Services"
                 description="Explore opportunities and possibilities."
                 backgroundImage={slideImage}
-                showFloatingContact={true} // Set to true to show the floating contact
+                showFloatingContact={true}
                 floatingContactProps={{
                     title: "Call us now!",
                     description: "Click the call Icon",
@@ -52,7 +61,6 @@ function SingleService() {
                         ensuring each project meets the highest standards of quality and efficiency.
                         Our expertise includes architectural and structural design, where we create
                         aesthetically pleasing and durable spaces for residential, commercial, and institutional needs.
-
                     </p>
                     <div className={styles.offerSection}>
                         <h3>What We Offer</h3>
@@ -67,6 +75,12 @@ function SingleService() {
                     <div className={styles.imageContainer}>
                         <img src={phone} alt="Civil Work" className={styles.image} />
                     </div>
+                    <button
+                        className={styles.slideButton}
+                        onClick={() => handleNavigation("/civil-archive")}
+                    >
+                        Learn More
+                    </button>
                 </div>
 
                 {/* RIGHT COLUMN: MECHANICAL ENGINEERING WORK */}
@@ -76,7 +90,6 @@ function SingleService() {
                         Cura Tech is a leader in mechanical engineering, delivering specialized solutions
                         for industrial needs. We offer firefighting systems for residential and commercial
                         properties, equipment erection services, and industrial piping work to ensure operational efficiency.
-
                     </p>
                     <div className={styles.offerSection}>
                         <h3>What We Offer</h3>
@@ -90,6 +103,12 @@ function SingleService() {
                     <div className={styles.imageContainer}>
                         <img src={image} alt="Mechanical Work" className={styles.image} />
                     </div>
+                    <button
+                        className={styles.slideButton}
+                        onClick={() => handleNavigation("/mech-archive")}
+                    >
+                        Learn More
+                    </button>
                 </div>
             </div>
 
@@ -112,4 +131,4 @@ function SingleService() {
     );
 }
 
-export default SingleService;
+export default OurService;

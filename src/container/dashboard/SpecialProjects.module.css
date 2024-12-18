@@ -177,14 +177,18 @@
   }
 }
 
-/* Mobile screens */
+/* Mobile view adjustments */
 @media (max-width: 767px) {
   .special_projects_container {
     padding: 15px;
   }
 
+  .sub_heading {
+    font-size: 1.75em; /* Increased size to match testimonials for mobile */
+  }
+
   .special_projects_title {
-    font-size: 3rem;
+    font-size: 1.25em; /* Adjusted size for mobile emphasis */
     margin-bottom: 20px;
   }
 
@@ -208,15 +212,15 @@
   }
 
   .hover_overlay h4 {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Adjusted heading size for hover overlay */
   }
 
   .hover_overlay p {
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* Adjusted text size for hover overlay */
   }
 
   .view_more_btn {
-    font-size: 0.875rem;
-    padding: 8px 16px;
+    font-size: 0.875rem; /* Compact button for mobile */
+    padding: 8px 16px; /* Compact padding for mobile */
   }
 }

@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    color: #fff;
+    background-color: #d2153d;
+    max-height: 420px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the container */
+}
+
+
+
+.image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.descriptionContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 48px;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    text-align: justify;
+
+}
+
+.buttonContainer {
+    margin-top: 20px;
+    }
+   
+.slideButton {
+   background-color: #001d52;
+   color: white;
+   padding: 12px 24px;
+   border: none;  
+   border-radius: 4px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s;
+   font-size: 1rem;
+   text-transform: uppercase;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+   
+.blink-once {
+   animation: blink 0.5s;
+   }
+   .slideButton:hover {
+   background-color: #001d52;
+   transform: translateY(-2px);
+   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+   }
+
+/* Responsiveness for tablets */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack image and description */
+        width: 90%; /* Adjust width */
+        max-height: none; /* Allow dynamic height */
+    }
+
+    .image {
+        width: 100%; /* Make the image take full width */
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    .descriptionContainer {
+        width: 100%;
+        padding: 24px; /* Reduce padding */
+    }
+
+    .heading {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Reduce font size */
+    }
+
+    .button {
+        padding: 12px 32px; /* Adjust padding */
+        font-size: 0.65rem;
+    }
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Use full width for mobile */
+    }
+
+    .image {
+        height: 150px; /* Further reduce height */
+    }
+
+
+    .descriptionContainer {
+        padding: 16px; /* Further reduce padding */
+    }
+
+    .heading {
+        font-size: 1.25rem; /* Further reduce font size */
+    }
+
+    .description {
+        font-size: 0.85rem; /* Adjust text size */
+        margin-bottom: 12px; /* Reduce spacing */
+    }
+
+    .button {
+        padding: 10px 24px; /* Smaller buttons */
+        font-size: 0.6rem; /* Smaller font size */
+    }
+}

@@ -3,8 +3,9 @@ import { useState, useEffect } from "react";
 import Dashboard from "./container/dashboard/Dashboard";
 import Contact from "./container/contact/Contact";
 import SingleProject from "./container/singleProject/SingleProject";
-import SingleService from "./container/singleService/SingleService";
-import ServiceArchive from "./container/serviceArchive/ServiceArchive";
+import OurService from "./container/ourServices/OurService";
+import CivilArchive from "./container/serviceArchive/CivilArchive";
+import MechArchive from "./container/serviceArchive/MechArchive";
 import AboutUs from "./container/aboutUs/AboutUs";
 import Portfolio from "./container/portfolio/Portfolio";
 import AppLayout from "./routConfig/AppLayout";
@@ -39,8 +40,9 @@ function App() {
                     <Route index element={<Dashboard />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/single-project" element={<SingleProject />} />
-                    <Route path="/single-service" element={<SingleService />} />
-                    <Route path="/service-archive" element={<ServiceArchive />} />
+                    <Route path="/our-service" element={<OurService />} />
+                    <Route path="/civil-archive" element={<CivilArchive />} />
+                    <Route path="/mech-archive" element={<MechArchive />} />
                     <Route path="/about-us" element={<AboutUs />} />
                     <Route path="/portfolio" element={<Portfolio />} />
                 </Route>

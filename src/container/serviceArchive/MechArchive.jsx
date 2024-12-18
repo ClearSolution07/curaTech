@@ -1,12 +1,12 @@
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/slide.jpg";
-import styles from "./ServiceArchive.module.css";
+import styles from "./MechArchive.module.css";
 import image1 from "../../assets/L11.jpg";
 import image2 from "../../assets/L9.jpg";
 import image3 from "../../assets/L10.jpg";
 import image4 from "../../assets/L8.jpg";
 
-function ServiceArchive() {
+function MechArchive() {
     const contentList = [
         {
             heading: "Architectural and Structural Design",
@@ -37,7 +37,7 @@ function ServiceArchive() {
     return (
         <>
             <CommonCarousel
-                heading="Service Archive"
+                heading="MECHANICAL Engineering Work Archive"
                 description="Explore opportunities and possibilities."
                 backgroundImage={slideImage}
                 showFloatingContact={true}
@@ -91,4 +91,4 @@ function ServiceArchive() {
     );
 }
 
-export default ServiceArchive;
+export default MechArchive;

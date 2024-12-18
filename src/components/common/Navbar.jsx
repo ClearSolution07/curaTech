@@ -34,19 +34,27 @@ const Navbar = () => {
             children: [
                 {
                     label: (
-                        <Link to="/single-service" onClick={handleMenuItemClick}>
+                        <Link to="/our-service" onClick={handleMenuItemClick}>
                             Our Service
                         </Link>
                     ),
-                    key: "singleService",
+                    key: "OurService",
                 },
                 {
                     label: (
-                        <Link to="/service-archive" onClick={handleMenuItemClick}>
-                            Service Archive
+                        <Link to="/civil-archive" onClick={handleMenuItemClick}>
+                            Civil Work Archive
                         </Link>
                     ),
-                    key: "serviceArchive",
+                    key: "CivilArchive",
+                },
+                {
+                    label: (
+                        <Link to="/mech-archive" onClick={handleMenuItemClick}>
+                            Mechanical Work Archive
+                        </Link>
+                    ),
+                    key: "MechArchive",
                 },
             ],
         },
