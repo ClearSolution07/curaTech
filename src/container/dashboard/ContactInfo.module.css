@@ -14,7 +14,7 @@
     background: #ffffff;
     padding: 20px;
     width: 300px;
-    border-top: 5px solid #d71920;
+    border-top: 5px solid #db191f;
     border-radius: 8px;
     box-shadow: 0px 6px 12px #00000026;
     text-align: center;
@@ -45,7 +45,33 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* Responsive Adjustments */
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+    .mapBackground {
+        height: 300px; /* Reduce height for smaller screens */
+    }
+
+    .addressBox {
+        width: 90%; /* Make the box adapt to smaller screen sizes */
+        padding: 15px;
+        bottom: -3rem; /* Adjust for reduced height */
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .addressAndDetails {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add gap between elements */
+        margin-top: 8rem; /* Adjust margin for better spacing */
+    }
+
+    .contactDetails {
+        flex: 1 1 90%; /* Adjust to take up full width */
+        padding: 10px;
+        font-size: 0.9rem; /* Adjust font size */
+        margin-top: 3rem;
+    }
+}
+
 
 /* Tablet view */
 @media (max-width: 768px) {
@@ -64,28 +90,5 @@
 
     .contactDetails {
         flex: 1 1 calc(50% - 12px); /* Two boxes per row */
-    }
-}
-
-/* Mobile view */
-@media (max-width: 480px) {
-    .mapBackground {
-        height: 200px; /* Maintain visibility on mobile */
-    }
-
-    .addressBox {
-        bottom: -2rem;
-        width: auto;
-        left: 1rem;
-        right: 1rem;
-    }
-
-    .addressAndDetails {
-        flex-direction: column; /* Stack items vertically */
-        gap: 16px;
-    }
-
-    .contactDetails {
-        flex: 1 1 100%; /* Full width for details */
     }
 }

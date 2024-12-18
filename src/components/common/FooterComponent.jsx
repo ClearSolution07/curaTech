@@ -1,18 +1,76 @@
 import { Row, Col, Typography, Space } from "antd";
-import {
-    FacebookOutlined,
-    TwitterOutlined,
-    LinkedinOutlined,
-    YoutubeOutlined,
-} from "@ant-design/icons";
-import logoImage from "../../assets/logo.png";
+import logoImage from "../../assets/Cura Tech Enginnering WithoutB.png";
 
 const { Title, Text, Link } = Typography;
 
 const FooterComponent = () => {
     return (
         <div style={{ color: "#fff" }}>
+            <style>
+                {`
+                /* General Footer Styles */
+                .footer-logo img {
+                    width: 300px;
+                    height: auto;
+                }
+                .footer-text {
+                    font-size: 14px;
+                }
+                .footer-section {
+                    padding: 66px;
+                }
+                .footer-links a {
+                    font-size: 16px;
+                    color: #fff;
+                }
+
+                /* Responsive Styles for Mobile Screens */
+                @media (max-width: 768px) {
+                    .footer-section {
+                        padding: 24px 16px !important;
+                    }
+                    .footer-logo {
+                        text-align: center; /* Center the logo horizontally */
+                    }
+
+                    .footer-logo img {
+                        width: 180px !important; /* Adjust the logo size for smaller screens */
+                        height: auto;
+                        margin: 0 auto; /* Ensures horizontal centering */
+                        display: block;
+                    }
+                }
+                    .footer-left {
+                        text-align: center;
+                        padding: 16px 0;
+                    }
+                    .footer-text {
+                        text-align: center;
+                        margin-top: 0;
+                        font-size: 13px !important;
+                    }
+                    .footer-links {
+                        text-align: left;
+                        margin-top: 16px;
+                    }
+                    .footer-title {
+                        font-size: 18px !important;
+                        text-align: left;
+                    }
+                    .footer-section .ant-col {
+                        margin-bottom: 24px;
+                    }
+                    .footer-copyright {
+                        text-align: center !important;
+                        font-size: 12px;
+                        margin-top: 24px !important;
+                    }
+                }
+                `}
+            </style>
+
             <Row>
+                {/* Left Section with Logo */}
                 <Col
                     xs={24}
                     md={6}
@@ -22,115 +80,31 @@ const FooterComponent = () => {
                         alignItems: "center",
                         justifyContent: "center",
                     }}
+                    className="footer-left"
                 >
                     <Row
                         style={{
                             flexDirection: "column",
                             gap: "20px",
                         }}
+                        className="footer-logo"
                     >
-                        <Row
-                            style={{ marginTop: "16px", marginBottom: "20px" }}
-                        >
+                        <Row>
                             <img
                                 src={logoImage}
                                 alt="Dustro Logo"
-                                style={{ width: "120px", height: "auto" }}
+                                style={{ width: "300px", height: "auto" }}
                             />
                         </Row>
-
-                        <Col>
-                            <Row>
-                                <Text
-                                    strong
-                                    style={{ color: "#fff", fontSize: "12px" }}
-                                >
-                                    CALL US TODAY
-                                </Text>
-                            </Row>
-                            <Row>
-                                <Text
-                                    style={{
-                                        fontSize: "24px",
-                                        fontWeight: "bold",
-                                        color: "#fff",
-                                    }}
-                                >
-                                    +1634 7638 654
-                                </Text>
-                            </Row>
-                        </Col>
-                        <Row
-                            style={{ marginTop: "16px", marginBottom: "20px" }}
-                        >
-                            <Space size="middle">
-                                <a
-                                    href="#"
-                                    style={{
-                                        backgroundColor: "#fff",
-                                        borderRadius: "50%",
-                                        padding: "6px",
-                                        fontSize: "20px",
-                                        color: "#00215b",
-                                    }}
-                                >
-                                    <TwitterOutlined />
-                                </a>
-                                <a
-                                    href="#"
-                                    style={{
-                                        backgroundColor: "#fff",
-                                        borderRadius: "50%",
-                                        padding: "6px",
-                                        fontSize: "20px",
-                                        color: "#00215b",
-                                    }}
-                                >
-                                    <FacebookOutlined />
-                                </a>
-                                <a
-                                    href="#"
-                                    style={{
-                                        backgroundColor: "#fff",
-                                        borderRadius: "50%",
-                                        padding: "6px",
-                                        fontSize: "20px",
-                                        color: "#00215b",
-                                    }}
-                                >
-                                    <LinkedinOutlined />
-                                </a>
-                                <a
-                                    href="#"
-                                    style={{
-                                        backgroundColor: "#fff",
-                                        borderRadius: "50%",
-                                        padding: "6px",
-                                        fontSize: "20px",
-                                        color: "#00215b",
-                                    }}
-                                >
-                                    <YoutubeOutlined />
-                                </a>
-                            </Space>
-                        </Row>
                         <Row>
-                            <Text
-                                style={{
-                                    display: "block",
-                                    marginTop: "16px",
-                                    fontSize: "14px",
-                                    color: "#fff",
-                                }}
-                            >
-                                Fusce eu magna quis velit efficitur rhoncus.{" "}
-                                <br />
-                                Vivamus vehicula, neque a velit.
+                            <Text className="footer-text">
+                                Complete engineering solutions under one roof.
                             </Text>
                         </Row>
                     </Row>
                 </Col>
 
+                {/* Right Section */}
                 <Col
                     xs={24}
                     md={18}
@@ -138,105 +112,61 @@ const FooterComponent = () => {
                         backgroundColor: "#00215b",
                         padding: "66px",
                     }}
+                    className="footer-section"
                 >
                     <Row gutter={[16, 16]}>
                         {/* Quick Links */}
-                        <Col xs={24} md={8}>
-                            <Title level={2} style={{ color: "#fff" }}>
+                        <Col xs={24} md={8} className="footer-links">
+                            <Title
+                                level={2}
+                                style={{ color: "#fff" }}
+                                className="footer-title"
+                            >
                                 Quick Links
                             </Title>
                             <Space direction="vertical">
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    About Company
-                                </Link>
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    Our Services
-                                </Link>
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    Our Projects
-                                </Link>
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    Pricings
-                                </Link>
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    Contacts
-                                </Link>
+                                <Link href="#">About Company</Link>
+                                <Link href="#">Our Services</Link>
+                                <Link href="#">Our Projects</Link>
+                                <Link href="#">Pricings</Link>
+                                <Link href="#">Contacts</Link>
                             </Space>
                         </Col>
 
                         {/* Clients Support */}
-                        <Col xs={24} md={8}>
-                            <Title level={2} style={{ color: "#fff" }}>
+                        <Col xs={24} md={8} className="footer-links">
+                            <Title
+                                level={2}
+                                style={{ color: "#fff" }}
+                                className="footer-title"
+                            >
                                 Clients Support
                             </Title>
                             <Space direction="vertical">
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    Careers
-                                </Link>
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    Our Process
-                                </Link>
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    FAQs
-                                </Link>
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    Clients Testimonials
-                                </Link>
-                                <Link
-                                    href="#"
-                                    style={{ color: "#fff", fontSize: "16px" }}
-                                >
-                                    Our Blog
-                                </Link>
+                                <Link href="#">Careers</Link>
+                                <Link href="#">Our Process</Link>
+                                <Link href="#">FAQs</Link>
+                                <Link href="#">Clients Testimonials</Link>
+                                <Link href="#">Our Blog</Link>
                             </Space>
                         </Col>
 
                         {/* Our News */}
-                        <Col xs={24} md={8}>
-                            <Title level={2} style={{ color: "#fff" }}>
+                        <Col xs={24} md={8} className="footer-links">
+                            <Title
+                                level={2}
+                                style={{ color: "#fff" }}
+                                className="footer-title"
+                            >
                                 Our News
                             </Title>
                             <Space direction="vertical" size="large">
                                 <div>
-                                    <Link
-                                        href="#"
-                                        style={{
-                                            color: "#fff",
-                                            fontSize: "16px",
-                                        }}
-                                    >
+                                    <Link href="#">
                                         Agile Construction <br /> Management
                                         Building
                                     </Link>
                                     <br />
-
                                     <Text
                                         style={{
                                             color: "#ddd",
@@ -247,13 +177,7 @@ const FooterComponent = () => {
                                     </Text>
                                 </div>
                                 <div>
-                                    <Link
-                                        href="#"
-                                        style={{
-                                            color: "#fff",
-                                            fontSize: "16px",
-                                        }}
-                                    >
+                                    <Link href="#">
                                         Top Saas Construction <br /> Products
                                         Information
                                     </Link>
@@ -269,18 +193,18 @@ const FooterComponent = () => {
                                 </div>
                             </Space>
                         </Col>
-                        <Row style={{ marginTop: "24px" }}>
-                            <Text style={{ color: "#fff", fontSize: "14px" }}>
-                                Merkulove © Dustro Template All rights reserved
-                                Copyrights 2020
-                            </Text>
-                        </Row>
+                    </Row>
+
+                    {/* Copyright */}
+                    <Row className="footer-copyright">
+                        <Text style={{ color: "#fff", fontSize: "14px" }}>
+                            © 2021 CURA TECH ENGINEERING. All rights reserved.
+                        </Text>
                     </Row>
                 </Col>
             </Row>
         </div>
     );
-
 };
 
 export default FooterComponent;

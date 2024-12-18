@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Row, Col, Menu, Drawer, Button, Divider } from "antd";
+import { Row, Col, Menu, Drawer, Button } from "antd";
 import { MenuOutlined, DownOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
-import logoImage from "../../assets/logo.png";
+import { Link, useLocation } from "react-router-dom";
+import logoImage from "../../assets/Cura Tech Enginnering WithoutB.png";
 
 const Navbar = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const location = useLocation(); // Get current location
 
     const handleDrawerOpen = () => {
         setIsDrawerOpen(true);
@@ -15,52 +16,77 @@ const Navbar = () => {
         setIsDrawerOpen(false);
     };
 
+    // Close the drawer when clicking a link
+    const handleMenuItemClick = () => {
+        setIsDrawerOpen(false);
+    };
+
     const menuItems = [
-        { label: <Link to="/">Home</Link>, key: "home" },
+        { label: <Link to="/" onClick={handleMenuItemClick}>Home</Link>, key: "home" },
         {
             label: (
                 <span>
                     Services{" "}
-                    <DownOutlined
-                        style={{ fontSize: "10px", marginLeft: "5px" }}
-                    />
+                    <DownOutlined style={{ fontSize: "10px", marginLeft: "5px" }} />
                 </span>
             ),
             key: "services",
             children: [
                 {
-                    label: <Link to="/single-service">Single Service</Link>,
-                    key: "singleService",
+                    label: (
+                        <Link to="/our-service" onClick={handleMenuItemClick}>
+                            Our Service
+                        </Link>
+                    ),
+                    key: "OurService",
                 },
                 {
-                    label: <Link to="/service-archive">Service Archive</Link>,
-                    key: "serviceArchive",
+                    label: (
+                        <Link to="/civil-archive" onClick={handleMenuItemClick}>
+                            Civil Work Archive
+                        </Link>
+                    ),
+                    key: "CivilArchive",
+                },
+                {
+                    label: (
+                        <Link to="/mech-archive" onClick={handleMenuItemClick}>
+                            Mechanical Work Archive
+                        </Link>
+                    ),
+                    key: "MechArchive",
                 },
             ],
         },
         {
             label: (
                 <span>
-                    Pages{" "}
-                    <DownOutlined
-                        style={{ fontSize: "10px", marginLeft: "5px" }}
-                    />
+                    Projects{" "}
+                    <DownOutlined style={{ fontSize: "10px", marginLeft: "5px" }} />
                 </span>
             ),
-            key: "pages",
+            key: "projects",
             children: [
                 {
-                    label: <Link to="/single-project">Single Project</Link>,
+                    label: (
+                        <Link to="/single-project" onClick={handleMenuItemClick}>
+                            Ongoing Project
+                        </Link>
+                    ),
                     key: "singleProject",
                 },
                 {
-                    label: <Link to="/portfolio">Portfolio</Link>,
+                    label: (
+                        <Link to="/portfolio" onClick={handleMenuItemClick}>
+                            Portfolio
+                        </Link>
+                    ),
                     key: "portfolio",
                 },
             ],
         },
-        { label: <Link to="/about-us">About Us</Link>, key: "aboutUs" },
-        { label: <Link to="/contact">Contacts</Link>, key: "contacts" },
+        { label: <Link to="/about-us" onClick={handleMenuItemClick}>About Us</Link>, key: "aboutUs" },
+        { label: <Link to="/contact" onClick={handleMenuItemClick}>Contact Us</Link>, key: "contacts" },
     ];
 
     return (
@@ -70,28 +96,75 @@ const Navbar = () => {
                 top: 0,
                 zIndex: 1000,
                 background: "#fff",
-                padding: "8px",
-                paddingLeft: "200px",
-                paddingRight: "200px",
                 borderBottom: "1px solid #e8e8e8",
+                padding: "8px 16px",
             }}
         >
-            <Row justify="space-between" align="middle">
-                <Col xs={12} md={6}>
+            {/* Inline Responsive Styles */}
+            <style>
+                {`
+                @media (max-width: 768px) {
+                    .navbar-container {
+                        padding: 8px 12px;
+                        font-weight: bold;
+                    }
+                    .logo {
+                        width: 50px;
+                    }
+                    .drawer-button {
+                        display: block;
+                        text-align: right;
+                        font-weight: bold;
+                    }
+                    .ant-menu-item,
+                    .ant-menu-submenu-title {
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    .ant-drawer-content {
+                        width: 80%;
+                    }
+                    .ant-menu-submenu-popup {
+                        position: relative !important;
+                        left: 0 !important; 
+                        box-shadow: none !important;
+                    }
+                }
+                @media (min-width: 769px) {
+                    .drawer-button {
+                        display: none;
+                        font-weight: bold;
+                    }
+                }
+                `}
+            </style>
+
+            <Row
+                className="navbar-container"
+                justify="space-between"
+                align="middle"
+            >
+                {/* Logo Section */}
+                <Col xs={18} md={6}>
                     <img
                         src={logoImage}
-                        alt="Dustro Logo"
+                        alt="Logo"
+                        className="logo"
                         style={{ width: "60px" }}
                     />
                 </Col>
+
+                {/* Desktop Menu */}
                 <Col xs={0} md={18}>
                     <Menu
                         mode="horizontal"
                         style={{
                             borderBottom: "none",
                             justifyContent: "right",
-                            marginRight: "-16px",
+                            fontSize: "17px",
+                            fontWeight: "bold",
                         }}
+                        className="navbar-menu"
                     >
                         {menuItems.map((item) =>
                             item.children ? (
@@ -110,7 +183,9 @@ const Navbar = () => {
                         )}
                     </Menu>
                 </Col>
-                <Col xs={12} md={0} style={{ textAlign: "right" }}>
+
+                {/* Mobile Menu Button */}
+                <Col xs={6} md={0} className="drawer-button">
                     <Button
                         type="text"
                         icon={
@@ -123,40 +198,45 @@ const Navbar = () => {
                 </Col>
             </Row>
 
+            {/* Mobile Drawer */}
             <Drawer
                 title="Menu"
                 placement="right"
                 onClose={handleDrawerClose}
                 open={isDrawerOpen}
+                destroyOnClose={true}
+                bodyStyle={{
+                    padding: 0,
+                    overflow: "auto", // Enable scrolling for long menus
+                }}
+                width={300} // Fixed drawer width
             >
                 <Menu
                     mode="vertical"
                     style={{
                         borderRight: "none",
                     }}
+                    expandIconPosition="end" // Position the expand icon to the end
                 >
-                    {menuItems.map((item, index) => (
-                        <React.Fragment key={item.key}>
-                            {item.children ? (
-                                <Menu.SubMenu
-                                    key={item.key}
-                                    title={item.label}
-                                    popupClassName="custom-menu-arrow"
-                                >
-                                    {item.children.map((child) => (
-                                        <Menu.Item key={child.key}>
-                                            {child.label}
-                                        </Menu.Item>
-                                    ))}
-                                </Menu.SubMenu>
-                            ) : (
-                                <Menu.Item key={item.key}>
-                                    {item.label}
-                                </Menu.Item>
-                            )}
-                            {index < menuItems.length - 1 && <Divider />}
-                        </React.Fragment>
-                    ))}
+                    {menuItems.map((item) =>
+                        item.children ? (
+                            <Menu.SubMenu
+                                key={item.key}
+                                title={item.label}
+                                popupClassName="ant-menu-submenu-popup" // Use custom class for alignment
+                            >
+                                {item.children.map((child) => (
+                                    <Menu.Item key={child.key}>
+                                        {child.label}
+                                    </Menu.Item>
+                                ))}
+                            </Menu.SubMenu>
+                        ) : (
+                            <Menu.Item key={item.key}>
+                                {item.label}
+                            </Menu.Item>
+                        )
+                    )}
                 </Menu>
             </Drawer>
         </div>

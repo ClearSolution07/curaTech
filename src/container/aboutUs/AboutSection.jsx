@@ -1,7 +1,15 @@
 import "./AboutSection.css";
-import image from "../../assets/AboutHuman.svg";
+import image from "../../assets/L5.jpg";
+import brochure from "../../assets/Cura Tech Brochure.pdf";
 
 const AboutSection = () => {
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.href = brochure;
+        link.download = "CuraTechBrochure.pdf"; 
+        link.click();
+    };
+
     return (
         <section className="about-section">
             <div className="container">
@@ -27,20 +35,21 @@ const AboutSection = () => {
                 <div className="content-column">
                     <p className="about-us">About Us</p>
                     <h2 className="title">
-                        We are providing the best customer service
+                        We provide the best engineering solutions
                     </h2>
                     <p className="description">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        Cura Tech Engineering is a trusted leader in civil and mechanical engineering services, offering comprehensive solutions for residential, commercial, and industrial projects. Our expertise spans architectural design, structural engineering, construction, interior design, and industrial services, including pipeline installations and firefighting systems. We take pride in delivering innovative, sustainable, and cost-effective solutions that align with our clients’ unique requirements. With a strong focus on safety, regulatory compliance, and high-quality standards, we provide end-to-end turnkey solutions that ensure seamless project execution from design to completion.
                     </p>
                     <div className="author">
-                        <p className="author-name">John Doe</p>
-                        <p className="author-title">CEO</p>
+                        <p className="author-name">Probir and Brajesh</p>
+                        <p className="author-title">Partners</p>
                     </div>
-                    <button className="learn-more-button">Learn more →</button>
+                    <button
+                        className="learn-more-button"
+                        onClick={handleDownload}
+                    >
+                        Download Brochure
+                    </button>
                 </div>
             </div>
         </section>

@@ -18,7 +18,7 @@ const FeatureSection = () => {
             ),
             title: "General Contract",
             description:
-                "Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum",
+                " Full-service construction, delivered on time and within budget.",
         },
         {
             icon: (
@@ -30,7 +30,7 @@ const FeatureSection = () => {
             ),
             title: "Project Planning",
             description:
-                "Nullam commodo tincidunt nisl, nec vehicula dui interdum nec",
+                "Streamlined strategies for smooth, efficient execution.",
         },
         {
             icon: (
@@ -40,9 +40,9 @@ const FeatureSection = () => {
                     style={{ width: "40px", height: "40px" }}
                 />
             ),
-            title: "Refurbishment",
+            title: "Turnkey Solutions",
             description:
-                "Sed vitae aliquet ipsum, ut ornare lectus. Proin sed sem risus. Sed nunc",
+                "End-to-end service for a hassle-free project journey.",
         },
     ];
 
@@ -58,7 +58,7 @@ const FeatureSection = () => {
             }}
         >
             <Title level={3} style={{ color: "#00215b", textAlign: "left" }}>
-                We Construct and Manage Places and Infrastructures
+                We Construct, Consult and Create Infrastructures
             </Title>
             <Col gutter={[16, 24]} style={{ marginTop: "24px" }}>
                 {features.map((feature, index) => (

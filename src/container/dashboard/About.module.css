@@ -10,108 +10,120 @@ body {
 #root {
 }
 
-/* Slider Container */
 .sliderContainer {
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: space-between;
     align-items: center;
-    padding: 0% 20% 10% 20%;
+    padding: 5% 10%;
     background-color: transparent;
-    height: 60vh;
+    height: auto;
 }
 
-/* Carousel Slide */
 .carouselSlide {
-    flex: 1;
-    max-width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1;
 }
 
 .title {
-    font-size: 2em;
-    color: red;
+    font-size: 1.8em;
+    color: #db191f;
     margin-bottom: 10px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .heading {
-    font-size: 24px;
+    font-size: 22px;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .subheading {
-    font-size: 18px;
+    font-size: 20px;
     color: black;
-    margin-bottom: 20px;
-    text-align: justify;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .description {
-    font-size: 16px;
+    font-size: 14px;
     color: black;
-    margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-bottom: 15px;
     text-align: justify;
 }
 
-/* Button */
 .buttonContainer {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
-.slideButton {
-    background-color: #dc2626;
+.contactButton {
+    background-color: #001d52;
     color: white;
-    padding: 12px 24px;
-    border: none;
+    padding: 10px 20px;
+    border: none;  
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
-    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s ease;
+    font-size: 14px;
     text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.blink-once {
-    animation: blink 0.5s;
-}
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
-
-.slideButton:hover {
-    background-color: #001d52;
+.contactButton:hover {
+    background-color: #db191f;
     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Carousel Image */
 .carouselImage {
-    flex: 1;
-    max-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-/* Responsive Styles */
+.image {
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Desktop view remains unchanged */
+@media (min-width: 769px) {
+    .sliderContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .carouselSlide {
+        max-width: 50%;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .heading, .subheading {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
 
 /* For tablets (max-width: 768px) */
 @media (max-width: 768px) {
@@ -145,49 +157,5 @@ body {
     .slideButton {
         padding: 10px 20px;
         font-size: 0.9rem;
-    }
-}
-
-/* For mobile devices (max-width: 480px) */
-@media (max-width: 480px) {
-    .sliderContainer {
-        padding: 5%;
-        text-align: center;
-    }
-
-    .carouselSlide {
-        align-items: center;
-        text-align: center;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    .heading {
-        font-size: 18px;
-    }
-
-    .subheading,
-    .description {
-        font-size: 14px;
-    }
-
-    .buttonContainer {
-        margin-top: 10px;
-    }
-
-    .slideButton {
-        padding: 8px 16px;
-        font-size: 0.8rem;
-    }
-
-    .carouselImage {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .image {
-        max-width: 90%;
     }
 }

@@ -1,9 +1,7 @@
-
-
 html,
 body {
     padding: 0;
-    margin: 0;
+    margin: 40;
     width: 100%;
     height: 100%;
     background: #fff;
@@ -21,27 +19,56 @@ body {
     align-items: center;
     height: 80vh;
     text-align: center;
-    background: url("src/assets/10jb.jpg") no-repeat center center;
+    background: url("../../../src/assets/L6.jpg") no-repeat center center;
     background-size: cover;
+    position: relative;
 }
 
-.heading,
-.description {
-    width: 50%;
-    font-size: 24px;
+.carouselSlide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(175, 174, 174, 0.099);
+    z-index: 1;
+}
+
+.carouselSlide > * {
+    position: relative;
+    z-index: 2;
+}
+
+.heading {
+    width: 70%;
+    font-size: 45px;
     color: #fff;
     margin: 0 auto 20px;
+    font-weight: bolder;
     line-height: 1.6;
     display: flex !important;
-    text-align: justify;
+    text-align: left; 
+    font-family: 'Josh', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
 }
 
 .description {
+    width: 70%;
     font-size: 16px;
+    color: #fff;
+    margin: 0 auto 20px;
+    font-weight: bold;
+    line-height: 1.8;
+    display: flex !important;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 .buttonContainer {
-    width: 50%;
+    width: 70%;
     font-size: 16px;
     color: #fff;
     margin: 0 auto 20px;
@@ -50,34 +77,34 @@ body {
     text-align: center;
 }
 
-.slideButton {
+.actionContainer {
+    width: 70%;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    display: flex !important;
+    text-align: center;
+}
+
+.Button {
     background-color: #001d52;
     color: white;
     padding: 12px 24px;
-    border: none;
+    border: none;  
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s ease;
     font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.blink-once {
-    animation: blink 0.5s;
-}
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
-
-.slideButton:hover {
-    background-color: hsl(0, 74%, 42%);
+.Button:hover {
+    background-color: #db191f;
     transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
 .FloatingContainer {
@@ -86,103 +113,52 @@ body {
     margin-left: 24vw;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
     .carouselSlide {
-        height: auto;
+        height: 70vh;
         padding: 15px;
+        background-size: cover;
     }
 
-    .heading,
-    .description,
-    .buttonContainer {
+    .heading {
+        width: 90%; /* Adjusted for mobile */
+        font-size: 22px; /* Smaller font */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        width: 90%; /* Adjusted for mobile */
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .actionContainer {
         width: 100%;
-        padding: 0 10px;
-        text-align: center;
-    }
-
-    .heading {
-        font-size: 18px;
-        margin-bottom: 16px;
-    }
-
-    .description {
-        font-size: 14px;
-    }
-
-    .slideButton {
-        margin-top: 16px;
-        font-size: 14px;
-        padding: 10px 18px;
-    }
-
-    .FloatingContainer {
-        margin-left: 0;
         justify-content: center;
     }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .carouselSlide {
-        height: auto;
-        padding: 20px;
+    .Button {
+        width: auto;
+        padding: 8px 16px;
+        font-size: 12px;
     }
 
-    .heading,
-    .description,
-    .buttonContainer {
-        width: 80%;
-        margin: 0 auto;
+    .FloatingContainer {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: flex-start;
+        align-items: center;
+        gap: 135px; /* Add spacing */
+        margin-left: 0; /* Center-align for mobile */
+        margin-top: 10px;
+    }
+
+    .FloatingContainer > * {
+        width: 90%; /* Restrict width for mobile */
+        max-width: 90%;
         text-align: center;
-    }
-
-    .heading {
-        font-size: 20px;
-        margin-bottom: 16px;
-    }
-
-    .description {
-        font-size: 16px;
-    }
-
-    .slideButton {
-        margin-top: 16px;
-        font-size: 15px;
-        padding: 12px 20px;
-    }
-
-    .FloatingContainer {
-        margin-left: 5vw;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 1024px) {
-    .carouselSlide {
-        height: 80vh;
-    }
-
-    .heading,
-    .description,
-    .buttonContainer {
-        width: 50%;
-    }
-
-    .heading {
-        font-size: 24px;
-        margin-bottom: 16px;
-    }
-
-    .description {
-        font-size: 16px;
-    }
-
-    .slideButton {
-        margin-top: 16px;
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .FloatingContainer {
-        margin-left: 24vw;
     }
 }

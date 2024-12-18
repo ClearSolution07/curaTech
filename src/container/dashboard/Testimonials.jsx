@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./testimonials.css";
-import testimonial from "../../assets/testimonial.png";
+import testimonial from "../../assets/L7.jpg";
 
 
 
@@ -8,23 +8,23 @@ const testimonials = [
     {
         id: 1,
         image: testimonial,
-        text: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagittis in vitae elit. Nam neque erat, semper vel ultrices in, finibus eu magna. Pellentesque habitant morbi tristique",
-        name: "Katy Grey",
+        text: "Exceptional Service! Cura Tech delivered our project on time, with top-notch quality and attention to detail. Their civil engineering expertise exceeded our expectations!",
+        name: "Katy sharma",
         title: "CEO Grey Industries",
     },
     {
         id: 2,
         image: testimonial,
-        text: "Proin ac quam eu erat semper sagittis in vitae elit. Nam neque erat, semper vel ultrices in, finibus eu magna. Pellentesque habitant morbi tristique",
-        name: "Harsh",
+        text: "Highly Recommend! The mechanical engineering solutions provided by Cura Tech for our industrial site were outstanding. Their team’s professionalism and efficiency were impressive.",
+        name: "Harsh Singh",
         title: "CEO Harsh Industries",
     },
     {
         id: 3,
         image: testimonial,
-        text: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Nam neque erat, semper vel ultrices in, finibus eu magna. Pellentesque habitant morbi tristique",
-        name: "Anupam",
-        title: "CEO Anupam Industries",
+        text: "Seamless Experience! Cura Tech’s turnkey solutions made our construction process seamless. From design to completion, their team handled",
+        name: "Bismoy",
+        title: "CEO Bismoy Industries",
     },
 ];
 

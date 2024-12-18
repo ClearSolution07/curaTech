@@ -1,4 +1,5 @@
 import { Button, Form, Input, Row, Col } from "antd";
+import styles from "../../container/contact/Contact.module.css";
 
 const SubmitForm = () => {
     const [form] = Form.useForm();
@@ -113,26 +114,9 @@ const SubmitForm = () => {
 
                 {/* Buttons */}
                 <Form.Item>
-                    <div
-                        style={{
-                            gap: "10px",
-                        }}
-                    >
-                        <Button
-                            style={{
-                                backgroundColor: "#D2153D",
-                                color: "white",
-                                border: "none",
-                                padding: "8px 16px",
-                                borderRadius: "4px",
-                                width: "240px",
-                                height: "64px"
-                            }}
-                            htmlType="submit"
-                        >
-                            Submit Message
-                        </Button>
-                    </div>
+                <div className={styles.actionContainer}>
+                    <button className={styles.contactButton}>Submit Form</button>
+                </div>
                 </Form.Item>
             </Form>
         </div>

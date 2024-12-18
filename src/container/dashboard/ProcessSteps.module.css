@@ -2,15 +2,17 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
-    height: 400px;
+    height: auto; /* Set to auto to adjust height for mobile */
     padding-bottom: 2rem;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: wrap; 
+    transition: all 0.7s ease-in-out;
 }
+
 .section {
     flex: 1;
     height: 100%;
     display: flex;
-    align-items: c;
+    align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
@@ -18,7 +20,7 @@
     padding: 1rem;
     background-size: cover;
     background-position: center;
-    transition: flex 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: flex 0.7s ease-in-out, transform 0.7s ease-in-out;
     overflow: visible;
     z-index: 1;
 }
@@ -53,6 +55,7 @@
 .section p {
     font-size: 1rem;
     margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
 .arrow_container {
@@ -62,7 +65,7 @@
 }
 
 .arrow_btn {
-    background: red;
+    background: #db191f;
     color: white;
     border: none;
     border-radius: 50%;
@@ -79,6 +82,45 @@
 .section:nth-child(3) .arrow_btn {
     background: #00215b;
 }
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .section_container {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .section {
+        flex: 1;
+        height: auto; 
+        margin-bottom: 0rem; 
+    }
+
+    .content h3 {
+        font-size: 1.25rem; /* Slightly smaller font size for headings */
+        font-weight: bold;
+    }
+
+    .content p {
+        font-size: 0.8rem; /* Adjusted font size for paragraphs */
+    }
+
+    .arrow_container {
+        position: static;
+    }
+
+    .arrow_btn {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+    }
+
+    .section img {
+        max-width: 100%; /* Ensure image fits the container */
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+}
+
 
 /* Tablet and larger screens */
 @media (min-width: 768px) {
@@ -97,65 +139,5 @@
     .arrow_btn {
         font-size: 1.75rem;
         padding: 0.75rem;
-    }
-}
-
-/* Large screens */
-@media (min-width: 1024px) {
-    .section_container {
-        height: 600px;
-    }
-
-    .section h3 {
-        font-size: 2.5rem;
-    }
-
-    .section p {
-        font-size: 1.5rem;
-    }
-
-    .arrow_btn {
-        font-size: 2rem;
-        padding: 1rem;
-    }
-}
-
-/* Mobile screens */
-@media (max-width: 767px) {
-    .section_container {
-        flex-direction: column;
-        height: auto;
-        padding-bottom: 1rem;
-    }
-
-    .section {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-
-    .section:first-child {
-        flex: 1;
-    }
-
-    .section:not(:first-child) {
-        flex: 1;
-    }
-
-    .section:not(:first-child):hover {
-        flex: 1;
-        transform: scale(1);
-    }
-
-    .section h3 {
-        font-size: 1.25rem;
-    }
-
-    .section p {
-        font-size: 1rem;
-    }
-
-    .arrow_btn {
-        font-size: 1.25rem;
-        padding: 0.5rem;
     }
 }

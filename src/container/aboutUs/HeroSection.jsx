@@ -7,13 +7,11 @@ const HeroSection = () => {
                 <p className={styles.subtitle}>Get a Quote</p>
                 <h1 className={styles.title}>Build Your Future Today</h1>
                 <p className={styles.description}>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industrys
-                    standard dummy text ever since the 1500s.
+                Dreams are the whispers of your soul, guiding you toward the horizon where the impossible becomes inevitable.
                 </p>
-                <button className={styles.appointmentButton}>
-                    Appointment →
-                </button>
+                <div className={styles.buttonContainer}>
+                    <button className={styles.slideButton}>Know More</button>
+                </div>
             </div>
 
             <div className={styles.cardsContainer}>
