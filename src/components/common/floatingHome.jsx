@@ -1,9 +1,26 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import PropTypes from "prop-types";
 import {Row, Col, Button} from "antd";
 import {PhoneOutlined} from "@ant-design/icons";
 
-const FloatingContact = ({title = 'Call us now!', description ='Click the call Icon', phoneNumber="+91 7002394679"}) => {
+const FloatingHome = ({
+                          title = 'Call us now!',
+                          description = 'Click the call Icon',
+                          phoneNumber = "+91 7002394679"
+                      }) => {
+
+    const [is_mobile_width, set_is_mobile_width] = useState(false);
+
+    useEffect(() => {
+        const width = document.body.clientWidth;
+        if (width < 600) {
+            set_is_mobile_width(true);
+        } else {
+            set_is_mobile_width(false);
+        }
+    }, []);
+
+
     return (
         <div
             className="fixed inset-x-0 bottom-0 flex justify-center z-50"
@@ -12,14 +29,15 @@ const FloatingContact = ({title = 'Call us now!', description ='Click the call I
             }}
         >
             <Col
-                style={{
+                style={is_mobile_width ? {
+                    boxShadow:
+                        "2px 6px 10px 0 rgba(0, 0, 0, 0.2), 2px 8px 22px 0 rgba(0, 0, 0, 0.19)",
+                } : {
                     padding: "20px",
                     backgroundColor: "white",
-                    width: "320px",
+                    width: "260px",
                     height: "100px",
                     position: "relative", // Changed to relative
-                    left: "30vw", // Maintain desktop positioning
-                    bottom: "4vh",
                     borderTop: "8px solid #b02636",
                     borderRadius: 20,
                     boxShadow:
@@ -27,42 +45,43 @@ const FloatingContact = ({title = 'Call us now!', description ='Click the call I
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    maxWidth: "73%", // Prevent overflow on smaller screens
                 }}
                 className="mobile-responsive-container" // Added for potential additional styling
             >
-                <Row
-                    style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                        marginBottom: "-12px",
-                    }}
-                >
-                    <div
+                {!is_mobile_width ? <>
+                    <Row
                         style={{
-                            color: "#00215b",
-                            fontFamily: "'Josh', sans-serif",
-                            fontSize: "17px",
-                            fontWeight: "bold",
-                            maxWidth: '200px', // Prevent overflow
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginBottom: "-12px",
                         }}
                     >
-                        {title}
-                    </div>
+                        <div
+                            style={{
+                                color: "#00215b",
+                                fontFamily: "'Josh', sans-serif",
+                                fontSize: "17px",
+                                fontWeight: "bold",
+                            }}
+                        >
+                            {title}
+                        </div>
 
-                </Row>
-                <Row
-                    style={{
-                        color: "#555",
-                        fontFamily: "'Poppins', sans-serif",
-                        fontSize: "14px",
-                        fontWeight: "bold",
-                        maxWidth: '280px', // Prevent overflow
-                    }}
-                >
-                    {description}
-                </Row>
+                    </Row>
+                    <Row
+                        style={{
+                            color: "#555",
+                            fontFamily: "'Poppins', sans-serif",
+                            fontSize: "14px",
+                            fontWeight: "bold",
+                            maxWidth: '280px', // Prevent overflow
+                        }}
+                    >
+                        {description}
+                    </Row>
+                </> : null}
+
                 <Button
                     type="primary"
                     shape="circle"
@@ -86,10 +105,10 @@ const FloatingContact = ({title = 'Call us now!', description ='Click the call I
     );
 };
 
-FloatingContact.propTypes = {
+FloatingHome.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     phoneNumber: PropTypes.string.isRequired,
 };
 
-export default FloatingContact;
+export default FloatingHome;

@@ -5,17 +5,21 @@ import SpecialProjects from "./SpecialProjects";
 import ContactInfo from "./ContactInfo";
 import Testimonials from "./Testimonials";
 import VideoWithPlayButton from "./VideoWithPlayButton";
+import CommonCarousel from "../../components/common/CommonCarousel";
+import slideImage from "../../assets/Rectangle.svg";
+import FloatingContact from "../../components/common/FloatingContact";
 
 function Dashboard() {
     return (
         <>
-            <Slider />
-            <About />
-            <ProcessSteps />
-            <SpecialProjects />
-            <ContactInfo />
-            <Testimonials />
-            <VideoWithPlayButton />
+
+            <Slider/>
+            <About/>
+            <ProcessSteps/>
+            <SpecialProjects/>
+            <ContactInfo/>
+            <Testimonials/>
+            <VideoWithPlayButton/>
         </>
     );
 }
