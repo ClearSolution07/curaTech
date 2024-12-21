@@ -15,16 +15,6 @@ const SocialContact = () => {
       label: 'Facebook'
     },
     {
-      icon: <FaLinkedin />,
-      href: 'https://linkedin.com/in/yourprofile',
-      label: 'LinkedIn'
-    },
-    {
-      icon: <FaTwitter />,
-      href: 'https://twitter.com/yourhandle',
-      label: 'Twitter'
-    },
-    {
       icon: <FaYoutube />,
       href: 'https://youtube.com/yourchannel',
       label: 'YouTube'
@@ -38,7 +28,7 @@ const SocialContact = () => {
 
   const handleMouseDown = (e) => {
     setIsDragging(true);
-    
+
     // Calculate offset of mouse from container's top-left
     if (containerRef.current) {
       const rect = containerRef.current.getBoundingClientRect();
@@ -89,9 +79,9 @@ const SocialContact = () => {
         setPosition(prev => ({ ...prev, x: 0 }));
       } else {
         setSide('right');
-        setPosition(prev => ({ 
-          ...prev, 
-          x: windowWidth - containerWidth 
+        setPosition(prev => ({
+          ...prev,
+          x: windowWidth - containerWidth
         }));
       }
     }
@@ -123,7 +113,7 @@ const SocialContact = () => {
   }, [isDragging]);
 
   return (
-    <div 
+    <div
       ref={containerRef}
       className={`social-contact ${side === 'left' ? 'social-contact-left' : 'social-contact-right'} ${isDragging ? 'dragging' : ''}`}
       style={{

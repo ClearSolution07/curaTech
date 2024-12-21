@@ -10,7 +10,7 @@ const ContactInfo = () => {
             {/* Replace the map image background with the Google Maps iframe */}
             <div className={styles.mapBackground}>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4420.113268358756!2d91.80119945557989!3d26.12923567493806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHouse%20No%2006%2C%20Jayanagar%2C%20Guwahati%2C%20781022!5e0!3m2!1sen!2sin!4v1734072739298!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.05706189939!2d91.807181!3d26.1296824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a598756cbf283%3A0x381bef30feb57644!2sLife%20Care%20Super%20Speciality%20Clinic%20And%20Diagnostic%20Centre!5e0!3m2!1sen!2sin!4v1734728875500!5m2!1sen!2sin"
                     width="800"
                     height="600"
                     style={{

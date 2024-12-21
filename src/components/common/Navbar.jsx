@@ -126,11 +126,16 @@ const Navbar = () => {
                     }
                     .ant-menu-submenu-popup {
                         position: relative !important;
-                        left: 0 !important; 
+                        left: 134px !important; 
                         box-shadow: none !important;
+                        width: 60% !important;
+                        margin-top: 46px;
+                    }
+                    .ant-menu-submenu-arrow{
+                        display: none;
                     }
                 }
-                @media (min-width: 769px) {
+                @media (min-width: 768px) {
                     .drawer-button {
                         display: none;
                         font-weight: bold;
@@ -216,7 +221,7 @@ const Navbar = () => {
                     style={{
                         borderRight: "none",
                     }}
-                    expandIconPosition="end" // Position the expand icon to the end
+                    expandIconPosition="null" // Position the expand icon to the end
                 >
                     {menuItems.map((item) =>
                         item.children ? (

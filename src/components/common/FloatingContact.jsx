@@ -1,9 +1,26 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import PropTypes from "prop-types";
 import {Row, Col, Button} from "antd";
 import {PhoneOutlined} from "@ant-design/icons";
 
-const FloatingContact = ({title = 'Call us now!', description ='Click the call Icon', phoneNumber="+91 7002394679"}) => {
+const FloatingContact = ({
+                             title = 'Call us now!',
+                             description = 'Click the call Icon',
+                             phoneNumber = "+91 7002394679"
+                         }) => {
+
+    const [is_mobile_width, set_is_mobile_width] = useState(false);
+
+    useEffect(() => {
+        const width = document.body.clientWidth;
+        if (width < 1024) {
+            set_is_mobile_width(true);
+        } else {
+            set_is_mobile_width(false);
+        }
+    }, []);
+
+
     return (
         <div
             className="fixed inset-x-0 bottom-0 flex justify-center z-50"
@@ -18,7 +35,7 @@ const FloatingContact = ({title = 'Call us now!', description ='Click the call I
                     width: "320px",
                     height: "100px",
                     position: "relative", // Changed to relative
-                    left: "30vw", // Maintain desktop positioning
+                    left: is_mobile_width ? '9%': "30vw", // Maintain desktop positioning
                     bottom: "4vh",
                     borderTop: "8px solid #b02636",
                     borderRadius: 20,
