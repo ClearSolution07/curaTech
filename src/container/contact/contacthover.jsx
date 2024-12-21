@@ -11,17 +11,17 @@ const SocialContact = () => {
   const socialLinks = [
     {
       icon: <FaFacebook />,
-      href: 'https://facebook.com/yourpage',
+      href: 'https://www.facebook.com/profile.php?id=61568431042708&mibextid=wwXIfr&mibextid=wwXIfr',
       label: 'Facebook'
     },
     {
       icon: <FaYoutube />,
-      href: 'https://youtube.com/yourchannel',
+      href: 'https://youtube.com/@curatechengineering?si=uw75isJOo-dKPWHT',
       label: 'YouTube'
     },
     {
       icon: <FaInstagram />,
-      href: 'https://instagram.com/yourprofile',
+      href: 'https://www.instagram.com/cura_tech_engineering/profilecard/?igsh=Z2k5emlnNjlkeTJp',
       label: 'Instagram'
     },
   ];
