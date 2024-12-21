@@ -1,10 +1,12 @@
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/slide.jpg";
 import styles from "./CivilArchive.module.css";
-import image1 from "../../assets/L11.jpg";
-import image2 from "../../assets/L9.jpg";
-import image3 from "../../assets/L10.jpg";
-import image4 from "../../assets/L8.jpg";
+import image1 from "../../assets/civil/L11.jpg";
+import image2 from "../../assets/civil/L9.webp";
+import image3 from "../../assets/civil/L10.jpg";
+import image4 from "../../assets/civil/L17.jpg";
+import image5 from "../../assets/mechanical/L16.jpg";
+
 import {useEffect, useState} from "react";
 
 const contentList = [
@@ -35,7 +37,7 @@ const contentList = [
     {
         heading: "⁠Project Consultancy & Compliance",
         description: "Cura Tech offers expert consultancy in navigating legal and regulatory procedures for your project. From obtaining building permits to ensuring compliance with safety and environmental regulations, our team helps you stay on track. We assist with risk assessments, safety audits, and environmental impact studies, ensuring that your project meets all legal requirements and adheres to industry standards.",
-        image: image4,
+        image: image5,
         imagePosition: "left",
     },
 ];

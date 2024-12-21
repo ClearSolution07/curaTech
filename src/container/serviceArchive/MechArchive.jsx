@@ -1,17 +1,18 @@
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/slide.jpg";
 import styles from "./MechArchive.module.css";
-import image1 from "../../assets/L11.jpg";
-import image2 from "../../assets/L9.jpg";
-import image3 from "../../assets/L10.jpg";
-import image4 from "../../assets/L8.jpg";
+import image1 from "../../assets/mechanical/L11.jpg";
+import image2 from "../../assets/mechanical/L9.jpg";
+import image3 from "../../assets/mechanical/L10.jpg";
+import image4 from "../../assets/mechanical/L8.jpg";
+import image5 from "../../assets/mechanical/L16.jpg";
+
 import {useEffect, useState} from "react";
 
 const contentList = [
     {
         heading: "Firefighting Systems",
-        description: `Cura Tech specializes in designing and installing effective firefighting systems for both residential and commercial properties. We provide fire risk assessments, suppression systems, and fire alarm systems, ensuring that your property complies with safety standards. Our systems are tailored to meet the specific needs of each building, offering peace of mind and protection against potential fire hazards.
-`,
+        description: `Cura Tech specializes in designing and installing effective firefighting systems for both residential and commercial properties. We provide fire risk assessments, suppression systems, and fire alarm systems, ensuring that your property complies with safety standards. Our systems are tailored to meet the specific needs of each building, offering peace of mind and protection against potential fire hazards.`,
         image: image1,
         imagePosition: "left",
     },
@@ -36,7 +37,7 @@ const contentList = [
     {
         heading: "⁠Project Consultancy & Compliance",
         description: "Cura Tech offers expert consultancy in navigating legal and regulatory procedures for your project. From obtaining building permits to ensuring compliance with safety and environmental regulations, our team helps you stay on track. We assist with risk assessments, safety audits, and environmental impact studies, ensuring that your project meets all legal requirements and adheres to industry standards.",
-        image: image4,
+        image: image5,
         imagePosition: "left",
     },
 ];
