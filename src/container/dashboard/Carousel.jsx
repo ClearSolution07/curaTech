@@ -1,12 +1,12 @@
 import {Carousel} from "antd";
 import {useNavigate} from "react-router-dom";
 import styles from "./Slider.module.css";
-import slideData from "../../components/json/sliderdata.json";
 import FeatureSection from "../../components/FeatureSection";
 import TotalProjectNumber from "../../components/StatsComponent";
-import FloatingContact from "../../components/common/FloatingContact";
 import FloatingHome from "../../components/common/floatingHome";
 import {useEffect, useState} from "react";
+import slideData from "../../components/json/sliderdata.json";
+
 
 const Slider = () => {
     const navigate = useNavigate();
@@ -27,6 +27,20 @@ const Slider = () => {
         }
     }, []);
 
+    const getStyles = (index) => {
+        if (index === 1) {
+            return styles.carouselSlide1;
+        }
+
+        if (index === 2) {
+            return styles.carouselSlide2;
+        }
+
+        if (index === 3) {
+            return styles.carouselSlide3;
+        }
+    }
+
     return (
         <div className={styles.sliderContainer}>
             <div style={is_mobile_width ? {
@@ -45,7 +59,7 @@ const Slider = () => {
             </div>
             <Carousel autoplay>
                 {slideData.map((slide, index) => (
-                    <div key={index} className={styles.carouselSlide}>
+                    <div key={index} className={`${styles.carouselSlide} ${getStyles(index + 1)}`}>
                         <div className={styles.heading}>{slide.heading}</div>
                         <div className={styles.description}>{slide.description}</div>
                         <div className={styles.actionContainer}>

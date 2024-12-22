@@ -20,10 +20,22 @@ body {
     align-items: center;
     height: 80vh;
     text-align: center;
-    background: url("../../../src/assets/L6.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
 }
+
+.carouselSlide1 {
+    background: url("../../../src/assets/L6.webp") no-repeat center center;
+}
+
+.carouselSlide2 {
+    background: url("../../../src/assets/L12.webp") no-repeat center center;
+}
+
+.carouselSlide3 {
+    background: url("../../../src/assets/L4.webp") no-repeat center center;
+}
+
 
 .carouselSlide::before {
     content: "";

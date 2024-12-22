@@ -128,20 +128,20 @@ function OurService() {
 
 
             {/* Project Title Section */}
-            <div className={styles.projectSection}>
-                <h2 className={styles.projectTitle}>Project Title</h2>
-                <div className={styles.cardContainer}>
-                    {cardData.map((card) => (
-                        <div key={card.id} className={styles.card}>
-                            <div className={styles.company}>{card.company}</div>
-                            <div className={styles.description}>{card.description}</div>
-                            <div className={styles.buttonContainer}>
-                                <button className={styles.slideButton}>Know More</button>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            {/*<div className={styles.projectSection}>*/}
+            {/*    <h2 className={styles.projectTitle}>Project Title</h2>*/}
+            {/*    <div className={styles.cardContainer}>*/}
+            {/*        {cardData.map((card) => (*/}
+            {/*            <div key={card.id} className={styles.card}>*/}
+            {/*                <div className={styles.company}>{card.company}</div>*/}
+            {/*                <div className={styles.description}>{card.description}</div>*/}
+            {/*                <div className={styles.buttonContainer}>*/}
+            {/*                    <button className={styles.slideButton}>Know More</button>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        ))}*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </>
     );
 }
