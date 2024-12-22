@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, {useEffect} from "react";
+import {useNavigate} from "react-router-dom";
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/L8.jpg";
 import styles from "./OurService.module.css";
@@ -54,63 +54,74 @@ function OurService() {
             {/* Two Column Section */}
             <div className={styles.serviceSection}>
                 {/* LEFT COLUMN: CIVIL ENGINEERING WORK */}
-                <div className={styles.column}>
-                    <h2 className={styles.title}>CIVIL ENGINEERING WORK</h2>
-                    <p className={styles.description}>
-                        At Cura Tech, we specialize in providing end-to-end civil engineering solutions,
-                        ensuring each project meets the highest standards of quality and efficiency.
-                        Our expertise includes architectural and structural design, where we create
-                        aesthetically pleasing and durable spaces for residential, commercial, and institutional needs.
-                    </p>
-                    <div className={styles.offerSection}>
-                        <h3>What We Offer</h3>
-                        <ul className={styles.offerList}>
-                            <li>Architectural & Structural Design</li>
-                            <li>Residential & Commercial Construction</li>
-                            <li>Interior Designing</li>
-                            <li>Building Permissions and Approvals</li>
-                            <li>Complete Turnkey Solutions</li>
-                        </ul>
+                <div className={styles.serviceContainer}>
+                    <div className={styles.columnTop}>
+                        <h2 className={styles.title}>CIVIL ENGINEERING WORK</h2>
+                        <p className={styles.description}>
+                            At Cura Tech, we specialize in providing end-to-end civil engineering solutions,
+                            ensuring each project meets the highest standards of quality and efficiency.
+                            Our expertise includes architectural and structural design, where we create
+                            aesthetically pleasing and durable spaces for residential, commercial, and institutional
+                            needs.
+                        </p>
+                        <div className={styles.offerSection}>
+                            <h3>What We Offer</h3>
+                            <ul className={styles.offerList}>
+                                <li>Architectural & Structural Design</li>
+                                <li>Residential & Commercial Construction</li>
+                                <li>Interior Designing</li>
+                                <li>Building Permissions and Approvals</li>
+                                <li>Complete Turnkey Solutions</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className={styles.imageContainer}>
-                        <img src={phone} alt="Civil Work" className={styles.image} />
+                    <div className={styles.columnBottom}>
+                        <div className={styles.imageContainer}>
+                            <img src={phone} alt="Civil Work" className={styles.image}/>
+                        </div>
+                        <button
+                            className={styles.slideButton}
+                            onClick={() => handleNavigation("/civil-archive")}
+                        >
+                            Learn More
+                        </button>
                     </div>
-                    <button
-                        className={styles.slideButton}
-                        onClick={() => handleNavigation("/civil-archive")}
-                    >
-                        Learn More
-                    </button>
                 </div>
 
                 {/* RIGHT COLUMN: MECHANICAL ENGINEERING WORK */}
-                <div className={styles.column}>
-                    <h2 className={styles.title}>MECHANICAL ENGINEERING WORK</h2>
-                    <p className={styles.description}>
-                        Cura Tech is a leader in mechanical engineering, delivering specialized solutions
-                        for industrial needs. We offer firefighting systems for residential and commercial
-                        properties, equipment erection services, and industrial piping work to ensure operational efficiency.
-                    </p>
-                    <div className={styles.offerSection}>
-                        <h3>What We Offer</h3>
-                        <ul className={styles.offerList}>
-                            <li>Firefighting Solutions</li>
-                            <li>Equipment Erection</li>
-                            <li>Industrial Piping Work</li>
-                            <li>Structural Work</li>
-                        </ul>
+                <div className={styles.serviceContainer}>
+                    <div className={styles.columnTop}>
+                        <h2 className={styles.title}>MECHANICAL ENGINEERING WORK</h2>
+                        <p className={styles.description}>
+                            Cura Tech is a leader in mechanical engineering, delivering specialized solutions
+                            for industrial needs. We offer firefighting systems for residential and commercial
+                            properties, equipment erection services, and industrial piping work to ensure operational
+                            efficiency.
+                        </p>
+                        <div className={styles.offerSection}>
+                            <h3>What We Offer</h3>
+                            <ul className={styles.offerList}>
+                                <li>Firefighting Solutions</li>
+                                <li>Equipment Erection</li>
+                                <li>Industrial Piping Work</li>
+                                <li>Structural Work</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className={styles.imageContainer}>
-                        <img src={image} alt="Mechanical Work" className={styles.image} />
+                    <div className={styles.columnBottom}>
+                        <div className={styles.imageContainer}>
+                            <img src={image} alt="Mechanical Work" className={styles.image}/>
+                        </div>
+                        <button
+                            className={styles.slideButton}
+                            onClick={() => handleNavigation("/mech-archive")}
+                        >
+                            Learn More
+                        </button>
                     </div>
-                    <button
-                        className={styles.slideButton}
-                        onClick={() => handleNavigation("/mech-archive")}
-                    >
-                        Learn More
-                    </button>
                 </div>
             </div>
+
 
             {/* Project Title Section */}
             <div className={styles.projectSection}>
