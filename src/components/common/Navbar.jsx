@@ -35,7 +35,7 @@ const Navbar = () => {
                 {
                     label: (
                         <Link to="/our-service" onClick={handleMenuItemClick}>
-                            Our Service
+                            Our Services
                         </Link>
                     ),
                     key: "OurService",

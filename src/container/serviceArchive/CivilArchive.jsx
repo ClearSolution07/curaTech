@@ -1,11 +1,11 @@
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/slide.jpg";
 import styles from "./CivilArchive.module.css";
-import image1 from "../../assets/civil/L11.jpg";
+import image1 from "../../assets/civil/L11.webp";
 import image2 from "../../assets/civil/L9.webp";
-import image3 from "../../assets/civil/L10.jpg";
-import image4 from "../../assets/civil/L17.jpg";
-import image5 from "../../assets/mechanical/L16.jpg";
+import image3 from "../../assets/civil/L10.webp";
+import image4 from "../../assets/civil/L17.webp";
+import image5 from "../../assets/mechanical/L16.webp";
 
 import {useEffect, useState} from "react";
 

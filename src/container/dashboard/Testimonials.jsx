@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./testimonials.css";
-import testimonial from "../../assets/L7.jpg";
+import testimonial from "../../assets/L7.webp";
 
 
 

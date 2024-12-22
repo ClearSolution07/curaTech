@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 import CommonCarousel from "../../components/common/CommonCarousel";
-import slideImage from "../../assets/L8.jpg";
+import slideImage from "../../assets/L8.webp";
 import styles from "./OurService.module.css";
-import phone from "../../assets/L9.jpg";
-import image from "../../assets/L10.jpg";
+import phone from "../../assets/L9.webp";
+import image from "../../assets/L10.webp";
 
 function OurService() {
     const navigate = useNavigate();

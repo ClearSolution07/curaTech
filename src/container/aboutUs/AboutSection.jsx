@@ -1,5 +1,5 @@
 import "./AboutSection.css";
-import image from "../../assets/L5.jpg";
+import image from "../../assets/L5.webp";
 import brochure from "../../assets/Cura Tech Brochure.pdf";
 
 const AboutSection = () => {

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styles from "./CommonSlider.module.css";
 import FloatingContact from "./FloatingContact";
-import Bi from "../../assets/L3.jpg"
+import Bi from "../../assets/L3.webp"
 
 const CommonCarousel = ({
     heading,

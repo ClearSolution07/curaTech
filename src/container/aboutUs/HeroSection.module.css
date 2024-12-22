@@ -1,6 +1,6 @@
 .heroSection {
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     background-image: url("../../assets/AboutHero.svg?height=1080&width=1920");
     background-size: cover;
     background-position: center;
@@ -12,6 +12,8 @@
     text-align: center;
     padding: 2rem;
     color: white;
+
+
 }
 .heroSection::before {
     content: "";
@@ -28,6 +30,7 @@
     max-width: 800px;
     margin: 0 auto;
     z-index: 1;
+    padding-bottom: 10%;
 }
 
 .subtitle {
