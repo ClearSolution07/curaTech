@@ -11,6 +11,8 @@ import Portfolio from "./container/portfolio/Portfolio";
 import AppLayout from "./routConfig/AppLayout";
 import Loader from './components/Loader/progress';
 import SocialContact from './container/contact/contacthover';
+import { init } from '@emailjs/browser';
+init("-E22ns61CMWLFMkdC");
 
 import "./app.css";
 
