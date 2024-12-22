@@ -39,7 +39,8 @@ const Slider = () => {
                 zIndex: 10,
                 top: 32,
                 right: 32,
-            }}>
+            }}
+            >
                 <FloatingHome/>
             </div>
             <Carousel autoplay>

@@ -24,9 +24,6 @@ const FloatingHome = ({
     return (
         <div
             className="fixed inset-x-0 bottom-0 flex justify-center z-50"
-            style={{
-                pointerEvents: 'none' // Allow clicks to pass through the wrapper
-            }}
         >
             <Col
                 style={is_mobile_width ? {

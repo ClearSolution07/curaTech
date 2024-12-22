@@ -22,12 +22,7 @@ const FloatingContact = ({
 
 
     return (
-        <div
-            className="fixed inset-x-0 bottom-0 flex justify-center z-50"
-            style={{
-                pointerEvents: 'none' // Allow clicks to pass through the wrapper
-            }}
-        >
+        <div className="fixed inset-x-0 bottom-0 flex justify-center z-50">
             <Col
                 style={{
                     padding: "20px",
