@@ -8,11 +8,15 @@ import VideoWithPlayButton from "./VideoWithPlayButton";
 import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/Rectangle.svg";
 import FloatingContact from "../../components/common/FloatingContact";
+import {useEffect} from "react";
 
 function Dashboard() {
+    useEffect(()=> {
+        window.scrollTo(0,0);
+    }, [])
+
     return (
         <>
-
             <Slider/>
             <About/>
             <ProcessSteps/>

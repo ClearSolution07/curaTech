@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"; // Used to render the matched route's component
 import Navbar from "../components/common/Navbar";
-import Footer from "../components/common/FooterComponent"; // Add Footer if you have one
+import Footer from "../components/common/FooterComponent";
+import {useEffect} from "react"; // Add Footer if you have one
 
 const AppLayout = () => {
     return (

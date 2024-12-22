@@ -46,6 +46,10 @@ function CivilArchive() {
     const [is_mobile_width, set_is_mobile_width] = useState(false);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
+    useEffect(() => {
         const width = document.body.clientWidth;
         if (width < 1024) {
             set_is_mobile_width(true);
@@ -75,6 +79,7 @@ function CivilArchive() {
                     alignItems: "center",
                     justifyContent: "center",
                     flexDirection: "column",
+                    marginBottom: '64px',
                 }}
             >
                 {contentList.map((item, index) => (

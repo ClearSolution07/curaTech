@@ -9,6 +9,10 @@ import image from "../../assets/L10.jpg";
 function OurService() {
     const navigate = useNavigate();
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     const handleNavigation = (path) => {
         navigate(path);
         window.scrollTo(0, 0);

@@ -2,8 +2,13 @@ import CommonCarousel from "../../components/common/CommonCarousel";
 import slideImage from "../../assets/Rectangle.svg";
 import AboutSection from "./AboutSection";
 import HeroSection from "./HeroSection";
+import {useEffect} from "react";
 
 function AboutUs() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <>
             <CommonCarousel
@@ -17,8 +22,8 @@ function AboutUs() {
                     phoneNumber: "+91 7002394679",
                 }}
             />
-            <AboutSection />
-            <HeroSection />
+            <AboutSection/>
+            <HeroSection/>
         </>
     );
 }

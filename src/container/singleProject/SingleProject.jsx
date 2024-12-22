@@ -28,6 +28,10 @@ function SingleProject() {
     const [is_mobile_width, set_is_mobile_width] = useState(false);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
+    useEffect(() => {
         const width = document.body.clientWidth;
         if (width < 1024) {
             set_is_mobile_width(true);
@@ -50,7 +54,7 @@ function SingleProject() {
                     phoneNumber: "+91 7002394679",
                 }}
             />
-            <div className={is_mobile_width ? styles.sp_mb_container :  styles.sp_container}>
+            <div className={is_mobile_width ? styles.sp_mb_container : styles.sp_container}>
                 {
                     projectInfo.map((project_details) => (
                         is_mobile_width ?

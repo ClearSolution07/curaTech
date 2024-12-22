@@ -50,12 +50,12 @@ const FooterComponent = () => {
                         font-size: 13px !important;
                     }
                     .footer-links {
-                        text-align: left;
+                        text-align: center;
                         margin-top: 16px;
                     }
                     .footer-title {
                         font-size: 18px !important;
-                        text-align: left;
+                        text-align: center;
                     }
                     .footer-section .ant-col {
                         margin-bottom: 24px;
@@ -63,7 +63,7 @@ const FooterComponent = () => {
                     .footer-copyright {
                         text-align: center !important;
                         font-size: 12px;
-                        margin-top: 24px !important;
+                        margin-top: 64px !important;
                     }
                 }
                 `}
@@ -110,13 +110,13 @@ const FooterComponent = () => {
                     md={18}
                     style={{
                         backgroundColor: "#00215b",
-                        padding: "66px",
+                        padding: "66px 66px 0px 66px",
                     }}
                     className="footer-section"
                 >
                     <Row gutter={[16, 16]}>
                         {/* Quick Links */}
-                        <Col xs={24} md={8} className="footer-links">
+                        <Col xs={24} md={12} className="footer-links">
                             <Title
                                 level={2}
                                 style={{ color: "#fff" }}
@@ -128,13 +128,13 @@ const FooterComponent = () => {
                                 <Link href="#">About Company</Link>
                                 <Link href="#">Our Services</Link>
                                 <Link href="#">Our Projects</Link>
-                                <Link href="#">Pricings</Link>
+                                {/*<Link href="#">Pricings</Link>*/}
                                 <Link href="#">Contacts</Link>
                             </Space>
                         </Col>
 
                         {/* Clients Support */}
-                        <Col xs={24} md={8} className="footer-links">
+                        <Col xs={24} md={12} className="footer-links">
                             <Title
                                 level={2}
                                 style={{ color: "#fff" }}
@@ -145,60 +145,60 @@ const FooterComponent = () => {
                             <Space direction="vertical">
                                 <Link href="#">Careers</Link>
                                 <Link href="#">Our Process</Link>
-                                <Link href="#">FAQs</Link>
+                                {/*<Link href="#">FAQs</Link>*/}
                                 <Link href="#">Clients Testimonials</Link>
-                                <Link href="#">Our Blog</Link>
+                                {/*<Link href="#">Our Blog</Link>*/}
                             </Space>
                         </Col>
 
                         {/* Our News */}
-                        <Col xs={24} md={8} className="footer-links">
-                            <Title
-                                level={2}
-                                style={{ color: "#fff" }}
-                                className="footer-title"
-                            >
-                                Our News
-                            </Title>
-                            <Space direction="vertical" size="large">
-                                <div>
-                                    <Link href="#">
-                                        Agile Construction <br /> Management
-                                        Building
-                                    </Link>
-                                    <br />
-                                    <Text
-                                        style={{
-                                            color: "#ddd",
-                                            fontSize: "12px",
-                                        }}
-                                    >
-                                        20 Nov 2020 &nbsp; by merkulove
-                                    </Text>
-                                </div>
-                                <div>
-                                    <Link href="#">
-                                        Top Saas Construction <br /> Products
-                                        Information
-                                    </Link>
-                                    <br />
-                                    <Text
-                                        style={{
-                                            color: "#ddd",
-                                            fontSize: "12px",
-                                        }}
-                                    >
-                                        29 Nov 2020 &nbsp;by merkulove
-                                    </Text>
-                                </div>
-                            </Space>
-                        </Col>
+                        {/*<Col xs={24} md={8} className="footer-links">*/}
+                        {/*    <Title*/}
+                        {/*        level={2}*/}
+                        {/*        style={{ color: "#fff" }}*/}
+                        {/*        className="footer-title"*/}
+                        {/*    >*/}
+                        {/*        Our News*/}
+                        {/*    </Title>*/}
+                        {/*    <Space direction="vertical" size="large">*/}
+                        {/*        <div>*/}
+                        {/*            <Link href="#">*/}
+                        {/*                Agile Construction <br /> Management*/}
+                        {/*                Building*/}
+                        {/*            </Link>*/}
+                        {/*            <br />*/}
+                        {/*            <Text*/}
+                        {/*                style={{*/}
+                        {/*                    color: "#ddd",*/}
+                        {/*                    fontSize: "12px",*/}
+                        {/*                }}*/}
+                        {/*            >*/}
+                        {/*                20 Nov 2020 &nbsp; by merkulove*/}
+                        {/*            </Text>*/}
+                        {/*        </div>*/}
+                        {/*        <div>*/}
+                        {/*            <Link href="#">*/}
+                        {/*                Top Saas Construction <br /> Products*/}
+                        {/*                Information*/}
+                        {/*            </Link>*/}
+                        {/*            <br />*/}
+                        {/*            <Text*/}
+                        {/*                style={{*/}
+                        {/*                    color: "#ddd",*/}
+                        {/*                    fontSize: "12px",*/}
+                        {/*                }}*/}
+                        {/*            >*/}
+                        {/*                29 Nov 2020 &nbsp;by merkulove*/}
+                        {/*            </Text>*/}
+                        {/*        </div>*/}
+                        {/*    </Space>*/}
+                        {/*</Col>*/}
                     </Row>
 
                     {/* Copyright */}
                     <Row className="footer-copyright">
-                        <Text style={{ color: "#fff", fontSize: "14px" }}>
-                            © 2021 CURA TECH ENGINEERING. All rights reserved.
+                        <Text style={{ color: "#fff", fontSize: "14px", width: '100%', textAlign: 'center' }}>
+                            © 2024 CURA TECH ENGINEERING. All rights reserved.
                         </Text>
                     </Row>
                 </Col>
