@@ -45,7 +45,7 @@ const StatsComponent = () => {
                     level={1}
                     style={{ color: "white", marginBottom: "8px" }}
                 >
-                    25+
+                    15+
                 </Title>
                 <Text style={{ color: "white", fontSize: "16px" }}>
                     Years of Experience
