@@ -1,33 +1,53 @@
 import React, {useState, useEffect, useRef} from 'react';
-import {FaFacebook, FaYoutube, FaInstagram, FaMobile} from 'react-icons/fa';
+import {FaFacebook, FaYoutube, FaInstagram, FaMobile, FaMailBulk} from 'react-icons/fa';
 import './contacthover.css';
 
 const SocialContact = () => {
     const [isDragging, setIsDragging] = useState(false);
     const [position, setPosition] = useState({x: window.innerWidth - 60, y: window.innerHeight / 2});
     const [side, setSide] = useState('right');
+    const [hover, setHover] = useState(false);
+    const [hoverIndex, setHoverIndex] = useState(null);
+
     const containerRef = useRef(null);
+
+    const onHover = (index) => {
+        setHover(true);
+        setHoverIndex(index);
+    };
 
     const socialLinks = [
         {
-            icon: <FaFacebook/>,
-            href: 'https://www.facebook.com/profile.php?id=61568431042708&mibextid=wwXIfr&mibextid=wwXIfr',
-            label: 'Facebook'
+            icon: <FaMailBulk/>,
+            href: 'contact',
+            label: 'Enquiry',
+            color: '#001d52'
         },
         {
-            icon: <FaYoutube/>,
-            href: 'https://youtube.com/@curatechengineering?si=uw75isJOo-dKPWHT',
-            label: 'YouTube'
+            icon: <FaFacebook/>,
+            href: 'https://www.facebook.com/profile.php?id=61568431042708&mibextid=wwXIfr&mibextid=wwXIfr',
+            label: 'Facebook',
+            color: '#1877F2',
         },
         {
             icon: <FaInstagram/>,
             href: 'https://www.instagram.com/cura_tech_engineering/profilecard/?igsh=Z2k5emlnNjlkeTJp',
-            label: 'Instagram'
+            label: 'Instagram',
+            color: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
         },
+
+        {
+            icon: <FaYoutube/>,
+            href: 'https://youtube.com/@curatechengineering?si=uw75isJOo-dKPWHT',
+            label: 'YouTube',
+            color: '#FF0000',
+        },
+
         {
             icon: <FaMobile/>,
             href: 'tel:7002394679',
-            label: 'Call'
+            label: 'Phone Call',
+            color: '#317873',
         },
     ];
 
@@ -122,27 +142,52 @@ const SocialContact = () => {
             ref={containerRef}
             className={`social-contact ${side === 'left' ? 'social-contact-left' : 'social-contact-right'} ${isDragging ? 'dragging' : ''}`}
             style={{
-                transform: `translate(${position.x}px, ${position.y}px)`,
                 position: 'fixed',
-                top: 0,
-                left: 0,
+                right: 0,
                 cursor: isDragging ? 'grabbing' : 'grab'
             }}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
+            onMouseLeave={() => {
+                setHoverIndex(null);
+                setHover(false);
+            }}
         >
             {socialLinks.map((link, index) => (
                 <a
                     key={index}
+                    onMouseEnter={() => onHover(index)}
                     href={link.href}
-                    target="_blank"
+                    target={index !== 0 ? "_blank" : ''}
                     rel="noopener noreferrer"
                     className="social-icon"
-                    title={link.label}
+                    // title={link.label}
+                    style={{
+                        background: link.color ? link.color : 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
+                        padding: 24,
+                        borderTopLeftRadius: index === 0 ? 12 : 0,
+                        borderBottomLeftRadius: index === socialLinks.length - 1 ? 12 : 0,
+                        display: "flex",
+                        flexDirection: 'row',
+                        height: index === 0 ? 100 : null,
+                        gap: 6,
+                    }}
                 >
-                    {link.icon}
-                    <span className="icon-label">{link.label}</span>
+                    {index !== 0 ? <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        transform: index === 0 ? 'rotate(90deg)' : null,
+                    }}>
+                        {link.icon}
+                    </div> : null}
+                    {index === 0 ? <div style={{
+                        fontSize: 16,
+                        width: 80,
+                        textAlign: 'center',
+                        transform: 'rotate(90deg)',
+                    }}>{link.label}</div> : <div/>}
                 </a>
             ))}
         </div>

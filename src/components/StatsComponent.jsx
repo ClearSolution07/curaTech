@@ -25,7 +25,7 @@ const StatsComponent = () => {
                     level={1}
                     style={{ color: "white", marginBottom: "8px" }}
                 >
-                    147
+                    20+
                 </Title>
                 <Text style={{ color: "white", fontSize: "16px" }}>
                     Completed Projects
@@ -33,8 +33,8 @@ const StatsComponent = () => {
             </Col>
             <Col
                 span={12}
-                
-                
+
+
                 style={{
                     backgroundColor: "#d32f2f",
                     color: "white",

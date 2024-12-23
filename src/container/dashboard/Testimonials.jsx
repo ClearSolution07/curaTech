@@ -45,7 +45,6 @@ export default function Testimonials() {
 
     return (
         <section className="testimonials-section">
-            <div className="testimonials-label">TESTIMONIALS</div>
             <h2 className="testimonials-title">Our Clients Say</h2>
             <div className="testimonial-card">
                 <img

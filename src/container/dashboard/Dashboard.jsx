@@ -8,8 +8,8 @@ import VideoWithPlayButton from "./VideoWithPlayButton";
 import {useEffect} from "react";
 
 function Dashboard() {
-    useEffect(()=> {
-        window.scrollTo(0,0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
     }, [])
 
     return (
@@ -18,9 +18,9 @@ function Dashboard() {
             <About/>
             <ProcessSteps/>
             <SpecialProjects/>
-            <ContactInfo/>
             <Testimonials/>
-            <VideoWithPlayButton/>
+            {/*<VideoWithPlayButton/>*/}
+            <ContactInfo/>
         </>
     );
 }

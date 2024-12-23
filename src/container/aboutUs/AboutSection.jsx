@@ -6,7 +6,7 @@ const AboutSection = () => {
     const handleDownload = () => {
         const link = document.createElement("a");
         link.href = brochure;
-        link.download = "CuraTechBrochure.pdf"; 
+        link.download = "CuraTechBrochure.pdf";
         link.click();
     };
 
@@ -22,7 +22,7 @@ const AboutSection = () => {
                         />
                         <div className="experience-overlay">
                             <div className="experience-number">
-                                <span className="number">25</span>
+                                <span className="number">15</span>
                                 <span className="plus">+</span>
                             </div>
                             <p className="experience-text">
@@ -40,10 +40,6 @@ const AboutSection = () => {
                     <p className="description">
                         Cura Tech Engineering is a trusted leader in civil and mechanical engineering services, offering comprehensive solutions for residential, commercial, and industrial projects. Our expertise spans architectural design, structural engineering, construction, interior design, and industrial services, including pipeline installations and firefighting systems. We take pride in delivering innovative, sustainable, and cost-effective solutions that align with our clients’ unique requirements. With a strong focus on safety, regulatory compliance, and high-quality standards, we provide end-to-end turnkey solutions that ensure seamless project execution from design to completion.
                     </p>
-                    <div className="author">
-                        <p className="author-name">Probir and Brajesh</p>
-                        <p className="author-title">Partners</p>
-                    </div>
                     <button
                         className="learn-more-button"
                         onClick={handleDownload}

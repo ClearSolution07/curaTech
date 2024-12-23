@@ -34,9 +34,9 @@
 
 .testimonial-image {
     width: 100%;
-    height: auto;
     object-fit: cover;
     border-radius: 12px;
+    height: 400px;
 }
 
 .testimonial-content {
@@ -109,6 +109,7 @@
 
     .testimonial-image {
         border-radius: 8px;
+        height: 250px;
     }
 
     .quote-icon {
@@ -158,7 +159,6 @@
 
     .testimonial-image {
         width: 400px;
-        height: auto;
     }
 
     .quote-icon {

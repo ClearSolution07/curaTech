@@ -18,7 +18,7 @@ const contentList = [
     },
     {
         heading: "Industrial Piping",
-        description: `Our industrial piping services include the design, installation, and maintenance of pipelines for water, gas, and oil systems. We work with a wide range of industries, ensuring that all piping systems are efficient, safe, and compliant with relevant standards. Whether it's for new installations or retrofitting existing systems, our team ensures that your piping infrastructure is robust and reliable.`,
+        description: `Our industrial piping services include the design, installation, and maintenance of pipelines for steam, water, gas, and oil systems. We work with a wide range of industries, ensuring that all piping systems are efficient, safe, and compliant with relevant standards. Whether it's for new installations or retrofitting existing systems, our team ensures that your piping infrastructure is robust and reliable.`,
         image: image2,
         imagePosition: "right",
     },
