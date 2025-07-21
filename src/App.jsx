@@ -12,6 +12,7 @@ import AppLayout from "./routConfig/AppLayout";
 import Loader from './components/Loader/progress';
 import SocialContact from './container/contact/contacthover';
 import {init} from '@emailjs/browser';
+import PrivacyPolicy from "./container/privacy/PrivacyPolicy";
 
 init("-E22ns61CMWLFMkdC");
 
@@ -39,6 +40,7 @@ function App() {
         <>
             {loading && <Loader imageSrc="/src/assets/Cura Tech Enginnering WithoutB.png"/>}
             <Routes>
+                <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
                 <Route path="/" element={<AppLayout/>}>
                     <Route index element={<Dashboard/>}/>
                     <Route path="contact" element={<Contact/>}/>
