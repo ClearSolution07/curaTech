@@ -1,5 +1,6 @@
 import { Row, Col, Typography, Space } from "antd";
 import logoImage from "../../assets/Cura Tech Enginnering WithoutB.png";
+import { Link as RouterLink } from "react-router-dom";
 
 const { Title, Text, Link } = Typography;
 
@@ -196,11 +197,21 @@ const FooterComponent = () => {
                     </Row>
 
                     {/* Copyright */}
-                    <Row className="footer-copyright">
-                        <Text style={{ color: "#fff", fontSize: "14px", width: '100%', textAlign: 'center' }}>
+                    <Row style={{ width: '100%', justifyContent: 'center', marginTop: 50, marginBottom: 2 }}>
+                        <RouterLink to="/privacy-policy" style={{ color: '#fff', fontSize: 16, textAlign: 'center', fontWeight: 500 }}>
+                            Privacy Policy
+                        </RouterLink>
+                    </Row>
+                    <Row className="footer-copyright" style={{marginTop: 0, marginBottom: 0, width: '100%', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap'}}>
+                        <Text style={{ color: "#fff", fontSize: "14px", textAlign: 'center', marginRight: 8 }}>
                             © 2024 CURA TECH ENGINEERING. All rights reserved.
                         </Text>
+                        <span style={{ color: '#fff', fontSize: 14, margin: '0 8px' }}>|</span>
+                        <Text style={{ color: "#fff", fontSize: "14px", textAlign: 'center', marginLeft: 8 }}>
+                            ©2025, Proudly developed by Clear Solutions Services
+                        </Text>
                     </Row>
+                    <style>{`.footer-copyright { margin-top: 0 !important; margin-bottom: 0 !important; }`}</style>
                 </Col>
             </Row>
         </div>
