@@ -6,7 +6,7 @@ import {PhoneOutlined} from "@ant-design/icons";
 const FloatingContact = ({
                              title = 'Call us now!',
                              description = 'Click the call Icon',
-                             phoneNumber = "+91 7002394679"
+                             phoneNumber = "+91 8099997489"
                          }) => {
 
     const [is_mobile_width, set_is_mobile_width] = useState(false);

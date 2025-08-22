@@ -43,7 +43,7 @@ const ContactInfo = () => {
                         <div>
                             <h5>COMPANY PHONES</h5>
                             <p>
-                                <span>+91 7002394679</span>
+                                <span>+91 8099997489</span>
                             </p>
                         </div>
                     </div>

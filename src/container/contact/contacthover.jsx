@@ -45,7 +45,7 @@ const SocialContact = () => {
 
         {
             icon: <FaMobile/>,
-            href: 'tel:7002394679',
+            href: 'tel:8099997489',
             label: 'Phone Call',
             color: '#317873',
         },

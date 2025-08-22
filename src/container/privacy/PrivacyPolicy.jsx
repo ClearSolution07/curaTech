@@ -146,7 +146,7 @@ const PrivacyPolicy = () => {
                     <p>To exercise these rights, contact us at:</p>
                     <div style={{marginLeft: 16, marginBottom: 16, maxWidth: 350}}>
                         <div style={{textAlign: 'left'}}>Email: <a href="mailto:curatechengineering@gmail.com">curatechengineering@gmail.com</a></div>
-                        <div style={{textAlign: 'left'}}>Contact Number: +91 7002394679</div>
+                        <div style={{textAlign: 'left'}}>Contact Number: +91 8099997489</div>
                     </div>
 
                     <h2 className={styles.heading} style={{marginTop: 32, color: '#b02636'}}>7. Data Security & Retention</h2>
@@ -167,7 +167,7 @@ const PrivacyPolicy = () => {
                         <li>Cura Tech Engineering</li>
                         <li>Jayanagar, Guwahati, Assam – House No 06, 781022</li>
                         <li>Email: <a href="mailto:curatechengineering@gmail.com">curatechengineering@gmail.com</a></li>
-                        <li>Contact Number: +91 7002394679</li>
+                        <li>Contact Number: +91 8099997489</li>
                         <li><a href="https://curatechengineering.com/" target="_blank" rel="noopener noreferrer">https://curatechengineering.com/</a></li>
                     </ul>
                 </div>
