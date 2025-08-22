@@ -53,7 +53,7 @@ function Contact() {
                         <div className={styles.contactDetails}>
                             <div className={styles.contactTitle}>Company Phones</div>
                             <div className={styles.contactNumbers}>
-                                <div>+91 7002394679</div>
+                                <div>+91 8099997489</div>
                             </div>
                         </div>
                     </div>

@@ -17,7 +17,7 @@ function Portfolio() {
                 floatingContactProps={{
                     title: "Call us now!",
                     description: "Click the call Icon",
-                    phoneNumber: "+91 7002394679"
+                    phoneNumber: "+91 8099997489"
                 }}
 
             />

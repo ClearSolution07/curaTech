@@ -51,7 +51,7 @@ function SingleProject() {
                 floatingContactProps={{
                     title: "Call us now!",
                     description: "Click the call Icon",
-                    phoneNumber: "+91 7002394679",
+                    phoneNumber: "+91 8099997489",
                 }}
             />
             <div className={is_mobile_width ? styles.sp_mb_container : styles.sp_container}>
